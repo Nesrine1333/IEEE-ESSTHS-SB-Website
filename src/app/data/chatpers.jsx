@@ -1,9 +1,4 @@
-//NOSONAR
-import cs_cover from "../../assets/chapters/cs_cover.jpg";
-import pes_cover from "../../assets/chapters/pes_cover.jpg";
-import ras_cover from "../../assets/chapters/ras_cover.jpg";
-import wie_cover from "../../assets/chapters/wie_cover.jpg";
-import sight_cover from "../../assets/chapters/sight_cover.jpg";
+
 
 export const chapters = [
 	{
@@ -14,43 +9,51 @@ export const chapters = [
 		variantcolor: "#c65503",
 		momos: "/assets/momoset/momos_cs.svg",
 		slug: "cs",
-		excom_image: cs_cover,
+		excom_image: "/assets/chapters/cs_cover.jpg",
 		team: [
-			// {
-			// 	name: "Ahmed Jguirim",
-			// 	title: "Chair",
-			// 	imageSmall: {
-			// 		url: "/assets/people/Ahmed Jguirim - CS Chair.jpg",
-			// 	},
-			// },
+			 {
+			 	name: "Ela Atia",
+			 	title: "Chair",
+			 	imageSmall: {
+			 		url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1748557263/chair_cs_nzepja.png",
+			 	},
+			 },
 			{
 				name: "Aroua Blidi",
 				title: "Vice Chair",
 				imageSmall: {
-					url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743421694/vice_zhmiiv.png",
+					url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1748557434/vice_cs_cwedxf.png",
 				},
 			},
-			// {
-			// 	name: "Elaa ben Othmen",
-			// 	title: "Webmaster",
-			// 	imageSmall: {
-			// 		url: "/assets/people/Elaa ben Othmen - Webmaster.jpg",
-			// 	},
-			// },
-			// {
-			// 	name: "Fourat Idani",
-			// 	title: "Treasurer",
-			// 	imageSmall: {
-			// 		url: "/assets/people/Fourat Idani - Treasurer.jpg",
-			// 	},
-			// },
-			// {
-			// 	name: "Rayhan Souai",
-			// 	title: "General Secretary",
-			// 	imageSmall: {
-			// 		url: "/assets/people/Rayhan Souai - SG.jpeg",
-			// 	},
-			// },
+			 {
+			 	name: "Arij Elassoued",
+			 	title: "Webmaster",
+			 	imageSmall: {
+			 		url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1748557436/webmaster_cs_n7v4wr.png",
+			 	},
+			 }
+			 ,
+			 {
+			 	name: "Salma Ben Ali",
+			 	title: "Media manager",
+			 	imageSmall: {
+			 		url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1748557272/media_manager_cs_pnbndb.png",
+			 	},
+			 },
+			 {
+			 	name: "Molka Atia",
+			 	title: "Treasurer",
+			 	imageSmall: {
+			 		url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1748557309/treasure_cs_vdvlak.png",
+			 	},
+			 },
+			 {
+			 	name: "Rahma Jnayah",
+			 	title: "General Secretary",
+			 	imageSmall: {
+			 		url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1748557435/sg__cs_fvmvcy.png",
+			 	},
+			 },
 		],
 		events: [
 			{
@@ -269,7 +272,7 @@ export const chapters = [
 		variantcolor: "#740f00",
 		momos: "/assets/momoset/momos_ras.svg",
 		slug: "ras",
-		excom_image: ras_cover,
+		excom_image:"/assets/chapters/pes_cover.jpg",
 		team: [
 			{
 				name: "Mohamed Anwer Saafi",
@@ -505,7 +508,7 @@ export const chapters = [
 		variantcolor: "#0e5b30",
 		momos: "/assets/momoset/momos_iip.svg",
 		slug: "iip",
-		excom_image: pes_cover,
+		excom_image:"/assets/chapters/pes_cover.jpg",
 		team: [
 			{
 				name: "Yassine Hallous",
@@ -874,7 +877,7 @@ export const chapters = [
 		variantcolor: "#CD163E",
 		momos: "/assets/momoset/momos_sight.svg",
 		slug: "sight",
-		excom_image: sight_cover,
+		excom_image: "/assets/chapters/sight_cover.jpg",
 		team: [
 			{
 				name: "Salim Hamouda",
@@ -989,7 +992,7 @@ export const chapters = [
 		variantcolor: "#4c1064",
 		momos: "/assets/momoset/momos_wie.svg",
 		slug: "wie",
-		excom_image: wie_cover,
+		excom_image:"../../assets/chapters/wie_cover.jpg",
 		team: [
 			{
 				name: "Salma Ghedamsi",
