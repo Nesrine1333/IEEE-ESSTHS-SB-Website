@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import "./chatbot.css";
 import { botOptions } from "../../data/optionBot"; // Adjust path if needed
-
+import { twMerge } from "tailwind-merge";
+import { Link, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
+import mosmos from "../../../assets/mosmos.png";
 
 
 export const Chatbot = () => {
@@ -58,10 +60,22 @@ export const Chatbot = () => {
 
 	return (
 		<div>
+		
+					
 			{!isOpen && (
-				<button className="open-chat-btn" onClick={togglePopup}>
-					Chat with us
-				</button>
+			
+				
+						<div onClick={togglePopup}>
+						<img
+							src={mosmos}
+							className={twMerge(
+								"fixed top-20 z-10 h-24 rotate-45 object-contain transition hover:scale-110 md:right-0 md:top-auto md:bottom-24 md:-rotate-45"
+							)}
+							alt="mosmos mascot"
+						/>
+					</div>
+			
+			
 			)}
 
 			{isOpen && (
@@ -74,7 +88,11 @@ export const Chatbot = () => {
 							<div key={index} className={`message-row ${message.sender}-message`}>
 								{message.sender === "bot" && (
 									<div className="bot-avatar">
-										<i className="bot-icon">🤖</i>
+										<i className="bot-icon">	<img
+					src="assets/mosmos.png"
+					
+					alt="mosmos mascot"
+				/></i>
 									</div>
 								)}
 								<div className={`message-bubble ${message.sender}-bubble`}>
@@ -97,7 +115,11 @@ export const Chatbot = () => {
 						))}
 						{typing && (
 							<div className="message-row bot-message">
-		<div className="bot-avatar">🤖</div>
+		<div className="bot-avatar">		<img
+					src="assets/mosmos.png"
+					
+					alt="mosmos mascot"
+				/></div>
 		<div className="typing-indicator">
 			<div className="dot"></div>
 			<div className="dot"></div>

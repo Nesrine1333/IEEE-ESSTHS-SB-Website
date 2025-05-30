@@ -118,15 +118,6 @@ export default function AppLayout({ children }) {
 				<Footer />
 			</div>
 
-			<Link to="https://www.facebook.com/essthsieee" target="_blank">
-				<img
-					src={mosmos}
-					className={twMerge(
-						"fixed top-20 z-10 h-24 rotate-45 object-contain transition hover:scale-110 md:right-0 md:top-auto md:bottom-24 md:-rotate-45"
-					)}
-					alt="mosmos mascot"
-				/>
-			</Link>
 			<ScrollRestoration />
 			
 			<ReactQueryDevtools initialIsOpen={false} />
