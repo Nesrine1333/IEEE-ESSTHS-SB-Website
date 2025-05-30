@@ -96,21 +96,21 @@ export default function AppLayout({ children }) {
 	return (
 		<>
 			{/* Chatbot with animation */}
-			{/* <motion.div
-				initial="initial"
-				animate="in"
-				variants={pageVariants}
-				transition={pageTransition}
-			>
-				<Chatbot />
-			</motion.div> */}
+	
 {showMemories ?(<TeamBuildingMemories/>):(<div>
+
 <div>
 				<Navigation />
 
 				<main>
 					{/* Animated page content */}
-
+	 <motion.div
+				initial="initial"
+				animate="in"
+			
+			>
+				<Chatbot />
+			</motion.div>
 					{children}
 					<Outlet />
 				</main>

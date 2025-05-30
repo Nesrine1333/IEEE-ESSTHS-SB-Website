@@ -228,7 +228,7 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
 								key={index}
 								onClick={() => onExtend(event)}
 								className="flex min-w-[20rem] transform cursor-pointer  
-                    flex-col items-center justify-center rounded-lg bg-white p-2 text-center shadow-lg transition-all dark:bg-gray-800 sm:min-w-[30%] md:min-w-[30%]"
+                    flex-col items-center justify-center rounded-lg bg-white p-2 text-center shadow-lg transition-all dark:bg-gray-800 sm:min-w-[20rem] md:w-[30%]  md:min-w-[20rem]"
 								style={{
 									scrollSnapAlign: "center",
 									transform: `scale(${scale})`,

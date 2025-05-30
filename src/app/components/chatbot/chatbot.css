@@ -26,7 +26,7 @@
 	max-height: 500px;
 	display: flex;
 	flex-direction: column;
-	background-color: #fff;
+	background-color: #f2f2f200;
 	border: 1px solid #ddd;
 	border-radius: 10px;
 	overflow: hidden;
@@ -69,7 +69,7 @@
 	flex: 1;
 	padding: 10px;
 	overflow-y: auto;
-	background-color: #f2f2f2;
+	background-color: #f2f2f2d5;
 }
 
 /* Message row containers */
@@ -109,11 +109,12 @@
 	border-radius: 15px;
 	line-height: 1.4;
 	font-size: 14px;
-	white-space: pre-wrap; /* preserve line breaks if any */
+	white-space: pre-wrap;
+	align-items: start; /* preserve line breaks if any */
 }
 
 .bot-bubble {
-	background-color: #ffffff;
+	background-color: #f2f2f2d5;
 	border: 1px solid #ccc;
 }
 
@@ -131,7 +132,8 @@
 	padding: 10px 15px;
 	cursor: pointer;
 	font-size: 14px;
-	margin-left: 0; /* override default for bot bubble if needed */
+	border-radius: 15px 15px 0 15px;
+	 /* override default for bot bubble if needed */
 }
 
 .option-bubble:hover {
@@ -171,5 +173,139 @@
 }
 
 .options {
-	padding-left: 1rem;
+	
+}
+.option-button {
+	margin: 5px 0;
+	padding: 8px 12px;
+	border: 1px solid #007bff;
+	background-color: white;
+	color: #007bff;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%;
+	text-align: left;
+}
+
+.option-button:hover {
+	background-color: #e0f0ff;
+}
+
+/* Make chatbot full width on small screens */
+@media screen and (max-width: 480px) {
+	.chatbot-popup {
+		width: 100vw;
+		height: 100vh;
+		max-height: none;
+		border-radius: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.chat-container {
+		padding: 15px;
+	}
+
+	.input-container input {
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	.input-container button {
+		padding: 10px 18px;
+		font-size: 16px;
+	}
+
+	.open-chat-btn {
+		bottom: 15px;
+		right: 15px;
+		padding: 12px 18px;
+		font-size: 16px;
+	}
+}
+
+.typing-indicator {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.typing-dot {
+	width: 6px;
+	height: 6px;
+	background-color: #999;
+	border-radius: 50%;
+	margin: 0 2px;
+	animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.typing-dot:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+	animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+	0%, 80%, 100% {
+		transform: scale(0);
+	}
+	40% {
+		transform: scale(1);
+	}
+}
+
+.typing-indicator {
+	display: flex;
+	align-items: center;
+	padding: 6px 12px;
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	width: fit-content;
+	animation: fadeIn 0.3s ease-in;
+}
+
+.typing-indicator .dot {
+	width: 8px;
+	height: 8px;
+	margin: 0 3px;
+	background-color: #999;
+	border-radius: 50%;
+	animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.typing-indicator .dot:nth-child(1) {
+	animation-delay: 0s;
+}
+.typing-indicator .dot:nth-child(2) {
+	animation-delay: 0.2s;
+}
+.typing-indicator .dot:nth-child(3) {
+	animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+	0%, 80%, 100% {
+		transform: scale(0.6);
+		opacity: 0.3;
+	}
+	40% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(5px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

@@ -1,68 +1,69 @@
 import { useState, useEffect } from "react";
 import "./chatbot.css";
+import { botOptions } from "../../data/optionBot"; // Adjust path if needed
+
+
 
 export const Chatbot = () => {
 	const [messages, setMessages] = useState([]);
 	const [userInput, setUserInput] = useState("");
 	const [isOpen, setIsOpen] = useState(false);
+	const [typing, setTyping] = useState(false);
 
-	// Called when the popup is opened
+	const showBotMessage = (text, isOption = false, options = []) => {
+		setTyping(true);
+		setTimeout(() => {
+			setMessages((prev) => [
+				...prev,
+				{ text, sender: "bot", isOption, options },
+			]);
+			setTyping(false);
+		}, 700);
+	};
+
+	const handleOptionClick = (option) => {
+		setMessages((prev) => [...prev, { text: option, sender: "user" }]);
+
+		const botResponse = botOptions[option];
+
+		if (botResponse) {
+			showBotMessage(botResponse.answer);
+			if (botResponse.followUp) {
+				setTimeout(() => {
+					showBotMessage(botResponse.followUp.question, true, botResponse.followUp.options);
+				}, 1000);
+			}
+		} else {
+			showBotMessage("Sorry, I don’t have information on that yet.");
+		}
+	};
+
 	useEffect(() => {
 		if (isOpen) {
-			// Initial bot message + options
-			setMessages([
-				{ text: "Hello! How can I help you today?", sender: "bot" },
-				{
-					text: "Join our Student Branch",
-					sender: "bot",
-					isOption: true,
-					link: "https://example.com/join-ssb", // Replace with your actual link
-				},
-				{
-					text: "Ask about event",
-					sender: "bot",
-					isOption: true,
-					link: "https://example.com/events", // Replace with your actual link
-				},
-				{
-					text: "Contact someone",
-					sender: "bot",
-					isOption: true,
-					link: "mailto:someone@example.com", // Replace with your actual email or link
-				},
-			]);
+			const { question, options } = botOptions.initial;
+			showBotMessage(question, true, options);
 		} else {
-			// Clear messages when closed (optional)
 			setMessages([]);
 		}
 	}, [isOpen]);
 
-	// Handle user-typed messages (if you still want them)
 	const handleSendMessage = () => {
 		if (!userInput.trim()) return;
-		// Add the user's message to the conversation
 		setMessages((prev) => [...prev, { text: userInput, sender: "user" }]);
 		setUserInput("");
+		// Optional: handle freeform input logic here
 	};
 
-	// Open link in a new tab
-	const handleLinkClick = (link) => {
-		window.open(link, "_blank");
-	};
-
-	// Toggle popup open/close
 	const togglePopup = () => setIsOpen(!isOpen);
 
 	return (
 		<div>
-			{/* Button to open the chatbot popup */}
 			{!isOpen && (
 				<button className="open-chat-btn" onClick={togglePopup}>
 					Chat with us
 				</button>
 			)}
 
-			{/* Chatbot popup */}
 			{isOpen && (
 				<div className="chatbot-popup">
 					<button className="closebutton" onClick={togglePopup}>
@@ -70,36 +71,40 @@ export const Chatbot = () => {
 					</button>
 					<div className="chat-container">
 						{messages.map((message, index) => (
-							<div
-								key={index}
-								className={`message-row ${message.sender}-message`}
-							>
-								{message.sender === "bot" && !message.isOption && (
+							<div key={index} className={`message-row ${message.sender}-message`}>
+								{message.sender === "bot" && (
 									<div className="bot-avatar">
 										<i className="bot-icon">🤖</i>
 									</div>
 								)}
-
-								{message.isOption ? (
-									// If it's an option, show it as a clickable button or link without an icon
-
-									<div className="options">
-										<div className={`message-bubble ${message.sender}-bubble`}>
-											<button
-												className="option-button"
-												onClick={() => handleLinkClick(message.link)}
-											>
-												{message.text}
-											</button>
+								<div className={`message-bubble ${message.sender}-bubble`}>
+									<p>{message.text}</p>
+									{message.isOption && (
+										<div className="options">
+											{message.options.map((option, idx) => (
+												<button
+													key={idx}
+													className="option-button"
+													onClick={() => handleOptionClick(option)}
+												>
+													{option}
+												</button>
+											))}
 										</div>
-									</div>
-								) : (
-									<div className={`message-bubble ${message.sender}-bubble`}>
-										<p>{message.text}</p>
-									</div>
-								)}
+									)}
+								</div>
 							</div>
 						))}
+						{typing && (
+							<div className="message-row bot-message">
+		<div className="bot-avatar">🤖</div>
+		<div className="typing-indicator">
+			<div className="dot"></div>
+			<div className="dot"></div>
+			<div className="dot"></div>
+		</div>
+	</div>
+						)}
 					</div>
 
 					<div className="input-container">
