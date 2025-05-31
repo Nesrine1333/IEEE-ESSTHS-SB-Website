@@ -3,11 +3,14 @@
 }
 
 .image_container {
-	width: 35vh;
+	width: 25vh;
 }
 
-@media screen {
+@media screen and(min-width:600px){
 	.image {
 		width: 80%;
 	}
+	.image_container {
+	width: 20vh;
+}
 }

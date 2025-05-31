@@ -43,6 +43,11 @@
 	z-index: 1; /* Ensure content appears above the pseudo-element */
 	color: white;
 }
+/* styles.css or in a global CSS file */
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(4, 21, 50, 0.957); /* stroke width and color */
+  color: rgb(255, 255, 255); /* inner fill color */
+}
 
 .background::before {
 	content: "";
@@ -52,12 +57,12 @@
 	right: 0;
 	bottom: 0;
 	z-index: -1; /* Send the background behind the content */
-
-	/* Background settings */
-	background-image: url("https://res.cloudinary.com/dytybjqwb/image/upload/v1740355709/470957586_18039732614460936_5318145448294234576_n_y4wvgr.jpg");
+background-image: url('../assets/teambuilding/4.jpg');
+	
+	/* background-image: url("https://res.cloudinary.com/dytybjqwb/image/upload/v1740355709/470957586_18039732614460936_5318145448294234576_n_y4wvgr.jpg"); */
 	background-size: cover;
 	background-position: center;
-	background-color: rgba(7, 1, 1, 0.836); /* Dark overlay */
+	background-color: rgba(30, 45, 66, 0.836); /* Dark overlay */
 	background-blend-mode: overlay;
 	background-attachment: fixed;
 	background-repeat: no-repeat;

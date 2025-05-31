@@ -5,15 +5,14 @@ import routes from "../routes";
 import NavModal from "./NavModal";
 // import SmallLogo from "../../assets/logo/logo-10-percent.png";
 import SmallLogo from "../../assets/logo/rsz_d2ycfxl.png";
-import Logo from "../../assets/main logo black (Custom).png";
-import LightLogo from "../../assets/main logo_2 (Custom).png";
-import LogoOnBlack from "../../assets/Logo on black.png";
+
 import ThemeToggle from "./ThemeToggle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { useParams } from "react-router-dom";
 
 import { useEffect } from "react";
+import './Navigation.css'
 
 export default function Navigation() {
 	const [toggleModal, setToggleModal] = useState(false);
@@ -40,9 +39,9 @@ export default function Navigation() {
 		// Default favicon
 	}, [chapterSlug]);
 	return (
-		<div>
-			<nav className="border-color-[#ffffff] border-[##7f9ab3]-300 fixed z-10 w-full rounded border border-b-2 bg-[#f2f8ffc0] px-2 py-1 backdrop-blur-md sm:px-8">
-				<div className="container mx-auto flex flex-wrap items-center justify-between">
+		<div >
+			<nav className="border-color-[#ffffff] border-[##7f9ab3]-300 fixed z-10 w-full rounded border border-b-2  px-2 py-1 backdrop-blur-md sm:px-8">
+				<div className="mx-auto flex flex-wrap items-center justify-between ">
 					<Link to="/" className="flex items-center">
 						<img
 							loading="eager"
@@ -65,7 +64,7 @@ export default function Navigation() {
 							TSYP 11
 						</span> */}
 					</Link>
-					<div className="flex items-center gap-2 font-['space_mono']">
+					<div className="flex items-center gap-2 ">
 						<div className="hidden w-auto items-center justify-between lg:flex">
 							<ul className="flex flex-col rounded-lg border border-gray-100 p-4 dark:border-gray-700 md:mt-0 md:flex-row md:border-0 md:text-sm md:font-medium">
 								{routes

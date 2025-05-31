@@ -45,15 +45,15 @@ import "./Homepage.css"
 
 
 
-import {
-	Chart as ChartJS,
-	LineElement,
-	PointElement,
-	LinearScale,
-	CategoryScale,
-} from "chart.js";
+// import {
+// 	Chart as ChartJS,
+// 	LineElement,
+// 	PointElement,
+// 	LinearScale,
+// 	CategoryScale,
+// } from "chart.js";
 
-ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale);
+// ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale);
 
 
 
@@ -171,7 +171,7 @@ export default function HomePage() {
 
 
 </div>
-		<div className="">
+		<div className=" text-stroke text-shadow ">
 			<h1 className="animated-title mb-8 text-center text-4xl font-bold tracking-tight lg:mb-8 lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
 				<span className="gradient-text">IEEE ESSTHS</span>{" "}
 				Student Branch

@@ -89,7 +89,7 @@ export const Chatbot = () => {
 								{message.sender === "bot" && (
 									<div className="bot-avatar">
 										<i className="bot-icon">	<img
-					src="assets/mosmos.png"
+					src="../assets/mosmos.png"
 					
 					alt="mosmos mascot"
 				/></i>
@@ -116,7 +116,7 @@ export const Chatbot = () => {
 						{typing && (
 							<div className="message-row bot-message">
 		<div className="bot-avatar">		<img
-					src="assets/mosmos.png"
+					src="../assets/mosmos.png"
 					
 					alt="mosmos mascot"
 				/></div>

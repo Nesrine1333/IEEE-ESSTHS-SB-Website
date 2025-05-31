@@ -107,7 +107,7 @@ width: 30px;
     justify-content: center;
     object-fit: contain;
     align-content: center;
-    border-radius: 5rem;
+    border-radius: 0rem 0rem 10rem 10rem;
 }
 
 .bot-icon {

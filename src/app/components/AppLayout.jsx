@@ -9,36 +9,78 @@ import { twMerge } from "tailwind-merge";
 import { images } from "../data/memories";
 import React, { useEffect, Suspense, useRef, useState } from "react";
 
-import {
-	Chart as ChartJS,
-	LineElement,
-	PointElement,
-	LinearScale,
-	CategoryScale,
-} from "chart.js";
+// import {
+// 	Chart as ChartJS,
+// 	LineElement,
+// 	PointElement,
+// 	LinearScale,
+// 	CategoryScale,
+// } from "chart.js";
 
 
 
 
-ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale);
+// ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale);
 
 
 function TeamBuildingMemories() {
-	const [imageRotations, setImageRotations] = useState([]);
-
-useEffect(() => {
-  setImageRotations(images.map(() => Math.random() * 20 - 10)); //NOSONAR
-}, []);
+  const [imageRotations, setImageRotations] = useState([]);
+  const [blurImages, setBlurImages] = useState(false);
   const [showTitle, setShowTitle] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setShowTitle(true);
+    setImageRotations(images.map(() => Math.random() * 20 - 10));
+
+    // Start blur after 3s
+    const blurTimer = setTimeout(() => {
+      setBlurImages(true);
     }, 3000);
+
+    // Show title after 4.5s
+    const titleTimer = setTimeout(() => {
+      setShowTitle(true);
+    }, 4500);
+
+    return () => {
+      clearTimeout(blurTimer);
+      clearTimeout(titleTimer);
+    };
   }, []);
 
   return (
-    <div className="relative flex h-screen flex-col items-center justify-center">
+    <div className="relative flex h-screen flex-col items-center justify-center overflow-hidden">
+      {/* Images block */}
+      <div className="absolute top-1 z-0 flex flex-wrap justify-center gap-4 px-2">
+        {images.map((src, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, rotate: -15, scale: 0.9 }}
+            animate={{
+              opacity: 1,
+              rotate: imageRotations[index],
+              scale: 1,
+              filter: blurImages ? "blur(10px)" : "blur(0px)",
+            }}
+            transition={{
+              duration: 1.2,
+              delay: index * 0.1,
+              ease: "easeOut",
+            }}
+            className="flex flex-col items-center bg-white rounded-md shadow-[0_5px_15px_rgba(0,0,0,0.5)] p-3 w-60"
+          >
+            <img
+              src={src}
+              alt={`Memory ${index + 1}`}
+              className="w-full h-48 object-cover rounded-sm"
+            />
+            <p className="mt-6 text-sm text-gray-600 italic text-center">
+              Memory #{index + 1}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Title block */}
       {showTitle && (
         <motion.h1
           initial={{ opacity: 0 }}
@@ -52,36 +94,15 @@ useEffect(() => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="inline-block"
           >
-          Welcome to IEEE essths student
+            Welcome to
+            <br /> IEEE ESSTHS SB
           </motion.span>
         </motion.h1>
       )}
-
-      <div className="absolute top-24 z-0 flex flex-wrap justify-center gap-2"> {/* Horizontal flex layout */}
-        {images.map((src, index) => (
-          <motion.div
-            key={index}
-            className="flex flex-col items-center"
-            initial={{ opacity: 0, scale: 1.2, rotate: imageRotations[index] }}
-            animate={{
-              opacity: showTitle ? 0.3 : 1,
-              scale: 1.1,
-              rotate: imageRotations[index],
-              filter: showTitle ? "blur(6px)" : "none",
-            }}
-            transition={{ duration: 1.5, delay: (index % images.length) * 0.1 }}
-          >
-            <img
-              src={src}
-              className="h-auto w-64 rounded-lg shadow-lg" /* Increased size */
-              alt={`Memory ${index + 1}`}
-            />
-          </motion.div>
-        ))}
-      </div>
     </div>
   );
 }
+
   
 export default function AppLayout({ children }) {
 	const { pathname } = useLocation();

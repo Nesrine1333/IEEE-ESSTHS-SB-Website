@@ -8,18 +8,18 @@ import { SparrowSurvey } from "./Home.page";
 import { AwardsMap } from "../components/awardsmap/Awardmap";
 import { awardsData } from "../data/awards";
 import { Link } from "react-router-dom";
-import { Line } from "react-chartjs-2";
+// import { Line } from "react-chartjs-2";
 import {  useNavigate, useParams } from "react-router-dom";
 
-import {
-	Chart as ChartJS,
-	LineElement,
-	PointElement,
-	LinearScale,
-	CategoryScale,
-} from "chart.js";
+// import {
+// 	Chart as ChartJS,
+// 	LineElement,
+// 	PointElement,
+// 	LinearScale,
+// 	CategoryScale,
+// } from "chart.js";
 
-ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale);
+// ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale);
 
 const images = [
 	"/assets/teambuilding/1.jpg",

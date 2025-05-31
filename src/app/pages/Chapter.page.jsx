@@ -43,7 +43,7 @@ export default function ChapterPage() {
 		<div className="py-40">
 		
 		  <motion.div
-      className=" flex items-center justify-center gap-3 text-white h-[35vh] mt-5"
+      className=" flex items-center justify-center gap-3 text-white h-[35vh] sm:min-h-[30vh] s:h-[26vh] mt-5"
       style={{
         background: `linear-gradient(20deg, ${currentChapter.color},${currentChapter.variantcolor})`,
         backgroundSize: "200% 200%",
