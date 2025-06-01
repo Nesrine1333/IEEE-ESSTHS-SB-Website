@@ -50,9 +50,9 @@ function TeamBuildingMemories() {
   }, []);
 
   return (
-    <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex h-screen w-full flex-row sm:gap-0 items-center justify-center overflow-hidden">
       {/* Images block */}
-      <div className="absolute top-0 z-0 flex flex-wrap justify-between ">
+      <div className="absolute top-0 z-0 flex flex-wrap justify-bewtween w-full flex-row items-center  self-center  sm: justify-center ">
         {images.map((src, index) => (
           <motion.div
             key={index}
@@ -62,27 +62,27 @@ function TeamBuildingMemories() {
               rotate: imageRotations[index],
               scale: 1,
               y: Math.random() * 20 - 10, // Random vertical offset
-              filter: blurImages 
-                ? "blur(10px) brightness(1.5) contrast(0.8)" 
-                : "blur(0px)",
+               filter: blurImages 
+                 ? "blur(10px) brightness(1.5) contrast(0.8)" 
+                 : "blur(0px)",
             }}
             transition={{
               duration: 0.8,
               delay: Math.random() * 0.3, // Random but smaller delay
               ease: "easeOut",
             }}
-            className="flex flex-col items-center bg-white rounded-md shadow-[0_8px_25px_rgba(0,0,0,0.3)] p-2 sm:p-3 w-full sm:w-48 md:w-60 transform hover:z-10 hover:scale-105 transition-transform"
+            className="flex flex-col items-center bg-white rounded-md shadow-[0_8px_25px_rgba(0,0,0,0.3)] p-1 sm:p-3 w-30 sm:w-50 md:w-60 transform hover:z-10 hover:scale-105 transition-transform"
             style={{ 
               zIndex: Math.floor(Math.random() * 10) + 1 // Random stacking order
             }}
           >
             <img
-              src={src}
-              alt={`Memory ${index + 1}`}
-              className="w-full h-24 sm:h-36 md:h-48 object-cover rounded-sm"
-            />
+                  src={src}
+                  alt={`Team memory ${index + 1}`}
+                  className="w-48 h-36 sm:w-60 sm:h-42 md:w-64 md:h-48 lg:w-72 lg:h-54 object-cover rounded-lg shadow-lg border-4 border-white transform hover:scale-105 transition-transform duration-300"
+                />
             <p className="mt-2 sm:mt-4 md:mt-6 text-xs sm:text-sm text-gray-600 italic text-center">
-              Memory #{index + 1}
+              ESSTHS IEEE
             </p>
           </motion.div>
         ))}
@@ -94,7 +94,7 @@ function TeamBuildingMemories() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="z-10 text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold text-blue-700 px-4"
+          className="z-10 text-center text-6xl sm:text-6xl md:text-6xl lg:text-8xl font-extrabold text-blue-700 px-4"
         >
           <motion.span
             initial={{ clipPath: "inset(0% 100% 0% 0%)" }}

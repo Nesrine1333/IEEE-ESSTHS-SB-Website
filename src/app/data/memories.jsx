@@ -4,7 +4,6 @@ export const images = [
 	"/assets/teambuilding/iip_award.jpg",
 	"/assets/teambuilding/5.jpg",
 	"/assets/teambuilding/4.jpg",
-	"/assets/teambuilding/6.jpg",
 	"/assets/teambuilding/7.jpg",
 	"/assets/teambuilding/8.jpg",
 	"/assets/teambuilding/9.jpg",
