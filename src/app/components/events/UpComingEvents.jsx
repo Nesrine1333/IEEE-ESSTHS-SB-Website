@@ -105,6 +105,11 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userInteracted, setUserInteracted] = useState(false);
   const userScrollTimeoutRef = useRef(null);
+  
+  // Touch handling state
+  const touchStartRef = useRef({ x: 0, y: 0 });
+  const touchThreshold = 50; // Minimum swipe distance
+
   const handleUserScroll = useCallback((e) => {
     console.log('user scrolling');
     e.preventDefault(); // Prevent default scroll behavior
@@ -131,6 +136,41 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
     }, 3000);
   }, [userInteracted, loopedEvents.length]);
 
+  // Touch event handlers
+  const handleTouchStart = useCallback((e) => {
+    const touch = e.touches[0];
+    touchStartRef.current = { x: touch.clientX, y: touch.clientY };
+  }, []);
+
+  const handleTouchEnd = useCallback((e) => {
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartRef.current.x;
+    const deltaY = touch.clientY - touchStartRef.current.y;
+    
+    // Determine if it's a horizontal swipe (more horizontal than vertical movement)
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > touchThreshold) {
+      e.preventDefault();
+      
+      if (!userInteracted) setUserInteracted(true);
+      
+      // Clear existing timeouts
+      if (userScrollTimeoutRef.current) clearTimeout(userScrollTimeoutRef.current);
+      
+      if (deltaX > 0) {
+        // Swiping right - go to previous element
+        setCurrentIndex((prev) => (prev - 1 + loopedEvents.length) % loopedEvents.length);
+      } else {
+        // Swiping left - go to next element
+        setCurrentIndex((prev) => (prev + 1) % loopedEvents.length);
+      }
+      
+      // Resume auto-scroll after 3 seconds of no interaction
+      userScrollTimeoutRef.current = setTimeout(() => {
+        setUserInteracted(false);
+      }, 3000);
+    }
+  }, [userInteracted, loopedEvents.length, touchThreshold]);
+
   // Auto-scroll effect
   useEffect(() => {
     if (userInteracted) return;
@@ -142,29 +182,25 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
     return () => clearInterval(interval);
   }, [userInteracted, loopedEvents.length]);
 
-  // Add wheel event listener with passive: false
+  // Add wheel and touch event listeners
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
 
+    // Mouse wheel events
     container.addEventListener('wheel', handleUserScroll, { passive: false });
+    
+    // Touch events for mobile
+    container.addEventListener('touchstart', handleTouchStart, { passive: true });
+    container.addEventListener('touchend', handleTouchEnd, { passive: false });
 
     return () => {
       container.removeEventListener('wheel', handleUserScroll);
+      container.removeEventListener('touchstart', handleTouchStart);
+      container.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [handleUserScroll]);
+  }, [handleUserScroll, handleTouchStart, handleTouchEnd]);
 
-  // Add wheel event listener with passive: false
-  useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
-
-    container.addEventListener('wheel', handleUserScroll, { passive: false });
-
-    return () => {
-      container.removeEventListener('wheel', handleUserScroll);
-    };
-  }, [handleUserScroll]);
   useEffect(() => {
     if (!scrollRef.current) return;
     const container = scrollRef.current;
@@ -183,7 +219,6 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
       behavior: "smooth",
     });
   }, [currentIndex, loopedEvents.length]);
-
 
   // Get prev, current, next indexes cyclically
   const prevIndex = (currentIndex - 1 + loopedEvents.length) % loopedEvents.length;
@@ -215,6 +250,7 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
             display: "flex",
             justifyContent: "center",
             padding: "0 50px",
+            touchAction: "pan-y", // Allow vertical scrolling but handle horizontal ourselves
           }}
         >
           {displayedEvents.map((event, idx) => {

@@ -125,7 +125,7 @@ export default function AppLayout({ children }) {
 		<>
 			{/* Chatbot with animation */}
 	
-{showMemories ?(<TeamBuildingMemories/>):(<div>
+{ showMemories ?(<TeamBuildingMemories/>):(<div>
 
 <div>
 				<Navigation />
