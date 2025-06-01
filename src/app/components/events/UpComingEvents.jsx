@@ -182,24 +182,18 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
     return () => clearInterval(interval);
   }, [userInteracted, loopedEvents.length]);
 
-  // Add wheel and touch event listeners
+  // Add wheel event listeners (desktop only)
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
 
-    // Mouse wheel events
+    // Mouse wheel events for desktop
     container.addEventListener('wheel', handleUserScroll, { passive: false });
-    
-    // Touch events for mobile
-    container.addEventListener('touchstart', handleTouchStart, { passive: true });
-    container.addEventListener('touchend', handleTouchEnd, { passive: false });
 
     return () => {
       container.removeEventListener('wheel', handleUserScroll);
-      container.removeEventListener('touchstart', handleTouchStart);
-      container.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [handleUserScroll, handleTouchStart, handleTouchEnd]);
+  }, [handleUserScroll]);
 
   useEffect(() => {
     if (!scrollRef.current) return;
@@ -230,6 +224,29 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
     loopedEvents[nextIndex],
   ];
 
+  // Navigation functions for arrows
+  const goToPrevious = () => {
+    if (!userInteracted) setUserInteracted(true);
+    if (userScrollTimeoutRef.current) clearTimeout(userScrollTimeoutRef.current);
+    
+    setCurrentIndex((prev) => (prev - 1 + loopedEvents.length) % loopedEvents.length);
+    
+    userScrollTimeoutRef.current = setTimeout(() => {
+      setUserInteracted(false);
+    }, 3000);
+  };
+
+  const goToNext = () => {
+    if (!userInteracted) setUserInteracted(true);
+    if (userScrollTimeoutRef.current) clearTimeout(userScrollTimeoutRef.current);
+    
+    setCurrentIndex((prev) => (prev + 1) % loopedEvents.length);
+    
+    userScrollTimeoutRef.current = setTimeout(() => {
+      setUserInteracted(false);
+    }, 3000);
+  };
+
   return (
     <div className="flex w-full flex-col items-center py-10">
       <motion.div
@@ -242,6 +259,47 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
       </motion.div>
 
       <div className="relative flex w-full overflow-hidden justify-center self-center">
+        {/* Left Arrow - visible on mobile/tablet */}
+        <button
+          onClick={goToPrevious}
+          className="absolute left-2 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:hidden"
+          aria-label="Previous event"
+        >
+          <svg
+            className="h-6 w-6 text-gray-700 dark:text-gray-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        {/* Right Arrow - visible on mobile/tablet */}
+        <button
+          onClick={goToNext}
+          className="absolute right-2 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:hidden"
+          aria-label="Next event"
+        >
+          <svg
+            className="h-6 w-6 text-gray-700 dark:text-gray-300"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+          </button>
         <div
           ref={scrollRef}
           className="custom-scrollbar flex space-x-3 overflow-hidden scroll-smooth p-3 w-full justify-center self-center"

@@ -13,16 +13,17 @@ export const Chatbot = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [typing, setTyping] = useState(false);
 
-	const showBotMessage = (text, isOption = false, options = []) => {
-		setTyping(true);
-		setTimeout(() => {
-			setMessages((prev) => [
-				...prev,
-				{ text, sender: "bot", isOption, options },
-			]);
-			setTyping(false);
-		}, 700);
-	};
+const showBotMessage = (text, isOption = false, options = [], link = null) => {
+	setTyping(true);
+	setTimeout(() => {
+		setMessages((prev) => [
+			...prev,
+			{ text, sender: "bot", isOption, options, link },
+		]);
+		setTyping(false);
+	}, 700);
+};
+
 
 	const handleOptionClick = (option) => {
 		setMessages((prev) => [...prev, { text: option, sender: "user" }]);
@@ -30,13 +31,18 @@ export const Chatbot = () => {
 		const botResponse = botOptions[option];
 
 		if (botResponse) {
-			showBotMessage(botResponse.answer);
-			if (botResponse.followUp) {
-				setTimeout(() => {
-					showBotMessage(botResponse.followUp.question, true, botResponse.followUp.options);
-				}, 1000);
-			}
-		} else {
+	showBotMessage(botResponse.answer, false, [], botResponse.link);
+	if (botResponse.followUp) {
+		setTimeout(() => {
+			showBotMessage(
+				botResponse.followUp.question,
+				true,
+				botResponse.followUp.options
+			);
+		}, 1000);
+	}
+}
+else {
 			showBotMessage("Sorry, I don’t have information on that yet.");
 		}
 	};
@@ -119,22 +125,37 @@ const handleSendMessage = () => {
 				/></i>
 									</div>
 								)}
-								<div className={`message-bubble ${message.sender}-bubble`}>
-									<p>{message.text}</p>
-									{message.isOption && (
-										<div className="options">
-											{message.options.map((option, idx) => (
-												<button
-													key={idx}
-													className="option-button"
-													onClick={() => handleOptionClick(option)}
-												>
-													{option}
-												</button>
-											))}
-										</div>
-									)}
-								</div>
+					<div className={`message-bubble ${message.sender}-bubble`}>
+	<p>{message.text}</p>
+
+	{message.link && (
+		<div className="special-link-wrapper">
+			<a
+				href={message.link}
+				target="_blank"
+				rel="noopener noreferrer"
+				className="special-link"
+			>
+				🔗 Click here to register !
+			</a>
+		</div>
+	)}
+
+	{message.isOption && (
+		<div className="options">
+			{message.options.map((option, idx) => (
+				<button
+					key={idx}
+					className="option-button"
+					onClick={() => handleOptionClick(option)}
+				>
+					{option}
+				</button>
+			))}
+		</div>
+	)}
+</div>
+
 							</div>
 						))}
 						{typing && (

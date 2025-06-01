@@ -410,7 +410,7 @@ export default function HomePage() {
 
 <section className="py-8 md:py-12 xflex container mx-auto flex-1 p-4 py-8 2xl:px-24">
 	<div className="mx-auto">
-		<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
+		<h1 className="mb-4 text-2xl sm:text-3xl lg:text-5xl font-bold tracking-tight text-center lg:text-start lg:mb-7 lg:font-extrabold lg:leading-none">
 			Find us here.
 		</h1>
 		<iframe
