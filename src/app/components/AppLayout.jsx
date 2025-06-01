@@ -62,9 +62,9 @@ function TeamBuildingMemories() {
               rotate: imageRotations[index],
               scale: 1,
               y: Math.random() * 20 - 10, // Random vertical offset
-               filter: blurImages 
-                 ? "blur(10px) brightness(1.5) contrast(0.8)" 
-                 : "blur(0px)",
+                filter: blurImages 
+                  ? "blur(10px) brightness(1.5) contrast(0.8)" 
+                  : "blur(0px)",
             }}
             transition={{
               duration: 0.8,
@@ -79,7 +79,7 @@ function TeamBuildingMemories() {
             <img
                   src={src}
                   alt={`Team memory ${index + 1}`}
-                  className="w-48 h-36 sm:w-60 sm:h-42 md:w-64 md:h-48 lg:w-72 lg:h-54 object-cover rounded-lg shadow-lg border-4 border-white transform hover:scale-105 transition-transform duration-300"
+                  className="w-40 h-36 sm:w-60 sm:h-42 md:w-64 md:h-48 lg:w-72 lg:h-54 object-cover rounded-lg shadow-lg border-4 border-white transform hover:scale-105 transition-transform duration-300"
                 />
             <p className="mt-2 sm:mt-4 md:mt-6 text-xs sm:text-sm text-gray-600 italic text-center">
               ESSTHS IEEE
