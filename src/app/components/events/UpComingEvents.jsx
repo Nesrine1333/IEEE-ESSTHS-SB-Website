@@ -1,20 +1,17 @@
 import { motion } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect,useCallback } from "react";
 import "./UpComingEvents.css";
 
 export function UpEvents({ chapter }) {
-	if (chapter.length === 0) return null;
-
-	const [expandedIndex, setExpandedIndex] = useState(null);
-	const [selectedEvent, setSelectedEvent] = useState(null);
-
+  	const [selectedEvent, setSelectedEvent] = useState(null);
 
 	if (chapter.length === 0) return null;
 
-	const scrollRef = useRef(null);
-	// const [currentIndex, setCurrentIndex] = useState(0);
-	const [userInteracted, setUserInteracted] = useState(false);
-	const [isTransitioning, setIsTransitioning] = useState(false);
+
+
+	if (chapter.length === 0) return null;
+
+
 
 	const sortedEvents = [...chapter]
 		.filter((event) => event["Event Date"])
@@ -24,122 +21,77 @@ export function UpEvents({ chapter }) {
 		}))
 		.sort((a, b) => b.parsedDate - a.parsedDate);
 
-	// Clone last element at the beginning, and first element at the end
 	const loopedEvents = [
-		sortedEvents[sortedEvents.length - 1], // Clone last element at the beginning
+		sortedEvents[sortedEvents.length - 1],
 		...sortedEvents,
-		sortedEvents[0], // Clone the first element at the end
+		sortedEvents[0], 
 		sortedEvents[1],
 	];
 
-	// On mount, scroll to the real first item
-	// useEffect(() => {
-	//   if (scrollRef.current) {
-	//     const cardWidth = scrollRef.current.children[1]?.getBoundingClientRect().width || 300;
-	//     scrollRef.current.scrollTo({ left: cardWidth, behavior: "instant" });
-	//     setCurrentIndex(1);
-	//   }
-	// }, []);
 
-	// Auto-scroll logic
-	// useEffect(() => {
-	// 	if (userInteracted || isTransitioning) return;
 
-	// 	const interval = setInterval(() => {
-	// 		setCurrentIndex((prevIndex) => prevIndex + 1);
-	// 	}, 3000);
-
-	// 	return () => clearInterval(interval);
-	// }, [currentIndex, userInteracted, isTransitioning]);
-
-	// Handle infinite scrolling transition
-	// useEffect(() => {
-	//   if (!scrollRef.current) return;
-
-	//   const card = scrollRef.current.children[currentIndex];
-	//   if (!card) return;
-
-	//   const cardWidth = card.getBoundingClientRect().width;
-	//   const targetScroll = card.offsetLeft - (scrollRef.current.clientWidth / 2) + (cardWidth / 2);
-
-	//   setIsTransitioning(true);
-	//   scrollRef.current.scrollTo({ left: targetScroll, behavior: "smooth" });
-
-	//   // Reset scroll position when reaching the cloned elements
-	//   if (currentIndex === loopedEvents.length - 1) {
-	//     setTimeout(() => {
-	//       scrollRef.current.scrollTo({ left: cardWidth, behavior: "instant" });
-	//       setCurrentIndex(1);
-	//       setIsTransitioning(false);
-	//     }, 500);
-	//   } else if (currentIndex === 0) {
-	//     setTimeout(() => {
-	//       scrollRef.current.scrollTo({ left: cardWidth * (loopedEvents.length - 2), behavior: "instant" });
-	//       setCurrentIndex(loopedEvents.length - 2);
-	//       setIsTransitioning(false);
-	//     }, 500);
-	//   } else {
-	//     setIsTransitioning(false);
-	//   }
-	// }, [currentIndex, loopedEvents.length]);
 
 	return (
 		<>
 			{selectedEvent && (
-				<div className="fixed inset-0 z-10 flex h-full w-full items-center justify-center bg-black bg-opacity-50 backdrop-blur-md">
-					<div
-						className="absolute inset-0"
-						onClick={() => setSelectedEvent(null)}
-					></div>
-					<motion.div
-						initial={{ opacity: 0, scale: 0.95 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{ duration: 0.3 }}
-						className="relative z-50 mx-4 w-full max-w-3xl rounded-lg bg-white p-6 text-center shadow-xl dark:bg-gray-900"
-					>
-						<button
-							onClick={() => setSelectedEvent(null)}
-							className="absolute top-4 right-6 text-3xl font-bold text-gray-500 hover:text-gray-800 dark:hover:text-gray-300"
-						>
-							×
-						</button>
-						<div className="flex flex-col items-center justify-between">
-						<div className="flex flex-row justify-center">
-								{" "}
-								
-								
-								<div><div><img src={selectedEvent["Event_pdp"]} alt="" className="" /></div>	<h2 className="text-3xl font-semibold text-gray-900 dark:text-white">
-						
-						{selectedEvent["Event Title"]}
-					</h2>
-					<p className="mt-4 text-gray-600 dark:text-gray-300">
-						{selectedEvent.parsedDate.toDateString()}-This activity is {selectedEvent.State}
-					</p></div>
-								
-							</div>
-							
-					
-								<div className="flex flex-row justify-evenly">
-							
-							<div className="flex flex-col justify-center">
-							<div className="flex flex-row">
-							<p>{selectedEvent["desrip"]}</p></div>	
-							
-								<a
-									href={selectedEvent["Event_link"]}
-									target="_blank"
-									rel="noreferrer"
-									className="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700 cursor-pointer"
-								>
-									View Event
-								</a>
-							</div>
-								</div>
-						
-						</div>
-					</motion.div>
-				</div>
-			)}
+	<div className="fixed inset-0 z-10 flex h-full w-full items-center justify-center bg-black bg-opacity-50 backdrop-blur-md">
+		<div
+			className="absolute inset-0"
+			onClick={() => setSelectedEvent(null)}
+		></div>
+		<motion.div
+			initial={{ opacity: 0, scale: 0.95 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{ duration: 0.3 }}
+			className="relative z-50 mx-4 w-full max-w-3xl rounded-lg bg-white p-4 sm:p-6 text-center shadow-xl dark:bg-gray-900 overflow-y-auto max-h-[90vh]"
+		>
+			<button
+				onClick={() => setSelectedEvent(null)}
+				className="absolute top-4 right-6 text-2xl sm:text-3xl font-bold text-gray-500 hover:text-gray-800 dark:hover:text-gray-300"
+			>
+				×
+			</button>
+
+			<div className="flex flex-col items-center gap-4">
+				{/* Image */}
+				{selectedEvent["Event_pdp"] && (
+					<img
+						src={selectedEvent["Event_pdp"]}
+						alt=""
+						className="w-full max-h-[250px] object-cover rounded-md sm:max-h-[300px]"
+					/>
+				)}
+
+				{/* Title */}
+				<h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white text-center">
+					{selectedEvent["Event Title"]}
+				</h2>
+
+				{/* Date and state */}
+				<p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
+					{selectedEvent.parsedDate.toDateString()} – This activity is{" "}
+					<span className="font-medium">{selectedEvent.State}</span>
+				</p>
+
+				{/* Description */}
+				<p className="text-sm sm:text-base text-gray-700 dark:text-gray-200 px-2 sm:px-4">
+					{selectedEvent["desrip"]}
+				</p>
+
+				{/* Button */}
+				<a
+					href={selectedEvent["Event_link"]}
+					target="_blank"
+					rel="noreferrer"
+					className="mt-4 inline-block w-full sm:w-auto rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-700"
+				>
+					View Event
+				</a>
+			</div>
+		</motion.div>
+	</div>
+)}
+
 
 			<SmoothScrollEvents
 				onExtend={setSelectedEvent}
@@ -148,124 +100,177 @@ export function UpEvents({ chapter }) {
 		</>
 	);
 }
-
 const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
-	const scrollRef = useRef(null);
-	const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [userInteracted, setUserInteracted] = useState(false);
+  const userScrollTimeoutRef = useRef(null);
+  const handleUserScroll = useCallback((e) => {
+    console.log('user scrolling');
+    e.preventDefault(); // Prevent default scroll behavior
+    
+    if (!userInteracted) setUserInteracted(true);
 
-	// Auto-scroll every 3 seconds
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentIndex((prevIndex) => (prevIndex + 1) % loopedEvents.length);
-		}, 3000); // Adjust scroll speed
+    // Clear existing timeouts
+    if (userScrollTimeoutRef.current) clearTimeout(userScrollTimeoutRef.current);
 
-		return () => clearInterval(interval);
-	}, [loopedEvents.length]);
+    const deltaY = e.deltaY;
+    
+    // Determine scroll direction and update currentIndex
+    if (deltaY > 0) {
+      // Scrolling down/right - go to next element
+      setCurrentIndex((prev) => (prev + 1) % loopedEvents.length);
+    } else if (deltaY < 0) {
+      // Scrolling up/left - go to previous element
+      setCurrentIndex((prev) => (prev - 1 + loopedEvents.length) % loopedEvents.length);
+    }
 
-	// Smooth scrolling & centering logic
-	useEffect(() => {
-		if (scrollRef.current) {
-			const container = scrollRef.current;
-			const selectedElement = container.children[1]; // Always scroll to the middle element
+    // Resume auto-scroll after 3 seconds of no interaction
+    userScrollTimeoutRef.current = setTimeout(() => {
+      setUserInteracted(false);
+    }, 3000);
+  }, [userInteracted, loopedEvents.length]);
 
-			if (selectedElement) {
-				const containerCenter = container.offsetWidth / 2;
-				const elementCenter =
-					selectedElement.offsetLeft + selectedElement.offsetWidth / 2;
+  // Auto-scroll effect
+  useEffect(() => {
+    if (userInteracted) return;
 
-				container.scrollTo({
-					left: elementCenter - containerCenter,
-					behavior: "smooth",
-				});
-			}
-		}
-	}, [currentIndex]);
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % loopedEvents.length);
+    }, 3000);
 
-	// Function to get the current window of 3 events
-	const getCurrentWindow = () => {
-		const nextIndex = (currentIndex + 1) % loopedEvents.length;
-		const prevIndex =
-			(currentIndex - 1 + loopedEvents.length) % loopedEvents.length;
+    return () => clearInterval(interval);
+  }, [userInteracted, loopedEvents.length]);
 
-		return [
-			loopedEvents[prevIndex], // Previous event
-			loopedEvents[currentIndex], // Current event
-			loopedEvents[nextIndex], // Next event
-		];
-	};
+  // Add wheel event listener with passive: false
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
 
-	return (
-		<div className="flex w-full flex-col items-center py-10">
-			<motion.div
-				initial={{ opacity: 0, y: -50 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.8 }}
-				className="mb-6 text-4xl font-bold"
-			>
-				Latest Events
-			</motion.div>
+    container.addEventListener('wheel', handleUserScroll, { passive: false });
 
-			{/* Scrollable Container */}
-			<div className="relative flex w-full justify-center overflow-hidden">
-				<motion.div
-					ref={scrollRef}
-					className="custom-scrollbar flex w-full space-x-3 overflow-x-auto scroll-smooth p-3"
-					style={{
-						scrollSnapType: "x mandatory",
-						scrollbarWidth: "none",
-						display: "flex",
-						justifyContent: "center",
-						padding: "0 50px", // Add horizontal padding to prevent cutoff
-					}}
-				>
-					{getCurrentWindow().map((event, index) => {
-						const isActive = index === 1; // The middle item is the active one
-						const scale = isActive ? 1 : 0.8;
-						const opacity = isActive ? 1 : 0.4;
+    return () => {
+      container.removeEventListener('wheel', handleUserScroll);
+    };
+  }, [handleUserScroll]);
 
-						return (
-							<motion.div
-								key={index}
-								onClick={() => onExtend(event)}
-								className="flex min-w-[20rem] transform cursor-pointer  
-                    flex-col items-center justify-center rounded-lg bg-white p-2 text-center shadow-lg transition-all dark:bg-gray-800 sm:min-w-[20rem] md:w-[30%]  md:min-w-[20rem]"
-								style={{
-									scrollSnapAlign: "center",
-									transform: `scale(${scale})`,
-									opacity,
-									transition:
-										"transform 0.4s ease-in-out, opacity 0.4s ease-in-out",
-								}}
-							>
-								<div
-									className="background_events h-60 w-full rounded bg-cover bg-center"
-									style={{ backgroundImage: `url(${event["Event_image"]})` }}
-								></div>
-								<h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-									{event["Event Title"]}
-								</h3>
-								<p className="text-gray-600 dark:text-gray-300">
-									{event.parsedDate?.toDateString()}-This activity is {event.State}
-								</p>
-								<a
-								
-									target="_blank"
-									rel="noreferrer"
-									className="text-blue-500 underline transition hover:text-blue-700 cursor-pointer"
-								>
-									View Event
-								</a>
-							</motion.div>
-						);
-					})}
-				</motion.div>
-			</div>
+  // Add wheel event listener with passive: false
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
 
-			<style jsx>{`
-				.custom-scrollbar::-webkit-scrollbar {
-					display: none;
-				}
-			`}</style>
-		</div>
-	);
+    container.addEventListener('wheel', handleUserScroll, { passive: false });
+
+    return () => {
+      container.removeEventListener('wheel', handleUserScroll);
+    };
+  }, [handleUserScroll]);
+  useEffect(() => {
+    if (!scrollRef.current) return;
+    const container = scrollRef.current;
+    
+    // For 2 or fewer elements, don't center
+    if (loopedEvents.length <= 2) return;
+  
+    const selectedElement = container.children[1]; // Middle element
+    if (!selectedElement) return;
+
+    const containerCenter = container.offsetWidth / 2;
+    const elementCenter = selectedElement.offsetLeft + selectedElement.offsetWidth / 2;
+
+    container.scrollTo({
+      left: elementCenter - containerCenter,
+      behavior: "smooth",
+    });
+  }, [currentIndex, loopedEvents.length]);
+
+
+  // Get prev, current, next indexes cyclically
+  const prevIndex = (currentIndex - 1 + loopedEvents.length) % loopedEvents.length;
+  const nextIndex = (currentIndex + 1) % loopedEvents.length;
+
+  const displayedEvents = [
+    loopedEvents[prevIndex],
+    loopedEvents[currentIndex],
+    loopedEvents[nextIndex],
+  ];
+
+  return (
+    <div className="flex w-full flex-col items-center py-10">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="mb-6 text-4xl font-bold"
+      >
+        Latest Events
+      </motion.div>
+
+      <div className="relative flex w-full overflow-hidden justify-center self-center">
+        <div
+          ref={scrollRef}
+          className="custom-scrollbar flex space-x-3 overflow-hidden scroll-smooth p-3 w-full justify-center self-center"
+          style={{
+            scrollbarWidth: "none",
+            display: "flex",
+            justifyContent: "center",
+            padding: "0 50px",
+          }}
+        >
+          {displayedEvents.map((event, idx) => {
+            const isActive = idx === 1;
+            const scale = isActive ? 1 : 0.8;
+            const baseOpacity = isActive ? 1 : 0.4;
+
+            return (
+              <motion.div
+                key={event["Event Title"] + idx}
+                onClick={() => onExtend(event)}
+                className="flex min-w-[20rem] cursor-pointer transform flex-col items-center justify-center rounded-lg bg-white p-2 text-center shadow-lg dark:bg-gray-800 sm:min-w-[20rem] md:w-[30%] md:min-w-[20rem] hover:opacity-100"
+                style={{
+                  transform: `scale(${scale})`,
+                  display: 'inline-block',
+                  opacity: baseOpacity,
+                  transition: "transform 0.4s ease-in-out, opacity 0.4s ease-in-out",
+                }}
+              >
+                <div
+                  className="background_events h-60 w-full rounded bg-cover bg-center"
+                  style={{ backgroundImage: `url(${event["Event_image"]})` }}
+                ></div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  {event["Event Title"]}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {event.parsedDate?.toDateString()} - This activity is{" "}
+                  {event.State}
+                </p>
+                <a
+                  href={event["Event_link"]}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500 underline transition hover:text-blue-700 cursor-pointer"
+                >
+                  View Event
+                </a>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
+
+      <style jsx>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .custom-scrollbar {
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+          -webkit-overflow-scrolling: touch;
+        }
+      `}</style>
+    </div>
+  );
 };
+
+export default SmoothScrollEvents;

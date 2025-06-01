@@ -40,7 +40,7 @@ export default function Navigation() {
 	}, [chapterSlug]);
 	return (
 		<div >
-			<nav className="border-color-[#ffffff] border-[##7f9ab3]-300 fixed z-10 w-full rounded border border-b-2  px-2 py-1 backdrop-blur-md sm:px-8">
+			<nav className="nav-background border-color-[#ffffff] border-[#7f9ab3]-300 fixed z-10 w-full rounded border border-b-2  px-2 py-1 backdrop-blur-lg sm:px-8">
 				<div className="mx-auto flex flex-wrap items-center justify-between ">
 					<Link to="/" className="flex items-center">
 						<img

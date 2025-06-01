@@ -1,6 +1,26 @@
 //this years events
 export const upevents = [
 	{
+		"Event Title": "Bright Sparks Workshop",
+		"Event Date": "29 May 2025 ",
+		"State": "Done",
+		"Event_link":"https://www.facebook.com/profile.php?id=100068599066993",
+		"Event_image": "events/wie_bright_spark.jpg",
+		"Event_pdp": "events/wie_bright_spark.jpg",
+
+		"desrip":"The IEEE WIE Affinity Group – ESSTHS Student Branch is thrilled to present a vibrant, hands-on workshop designed to spark curiosity and creativity in young minds! 💡✨As part of our mission to empower future changemakers, this event will introduce students to the wonders of clean energy and smart technologies through fun, interactive learning experiences.👩‍🔧 Inspiring inclusion, innovation, and impact—this workshop aligns with our dedication to promoting STEM education among youth and encouraging a more diverse and sustainable future. ",
+	},
+	{
+		"Event Title": "Drone project_BootCmap",
+		"Event Date": "1 May 2025 ",
+		"State": "in Progress",
+		"Event_link":"https://www.facebook.com/profile.php?id=61557575908522",
+		"Event_image": "events/aess_drone_project.jpg",
+		"Event_pdp": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743120305/aess_talk_q9xprg.png",
+
+		"desrip":"AESS Ramadhan Talks 2.0 (2025): This year, AESS Ramadhan Talks 2.0 returns as an online event featuring a series of expert-led workshops and sessions. Focused on 'Technologies and Communications in Space,' the event will cover key topics such as 5G and space, cybersecurity, IoT, and their implementation in space. It provides a platform for participants to gain valuable insights from industry experts and explore the latest advancements shaping the future of space technology.",
+	},
+	{
 		"Event Title": "Aess Talk",
 		"Event Date": "15 Apr 2025 ",
 		"State": "Finished",
@@ -13,7 +33,7 @@ export const upevents = [
 	{
 		"Event Title": "Solid works bootcamp",
 		"Event Date": "25 Apr 2023 8:30 PM",
-		"State": "in Progress",
+		"State": "Done",
 		"Event_link":"https://www.facebook.com/events/959027069169569/",
 		"Event_image": "assets/events/solidworks.jpg",
 		"Event_pdp": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743409655/solidwork_dnovue.png",
@@ -22,7 +42,7 @@ export const upevents = [
 	{
 		"Event Title": "Innosphere Virtual Summit",
 		"Event Date": "25 Apr 2023 8:30 PM",
-		"State": "in Progress",
+		"State": "Done",
 		"Event_link":"https://www.facebook.com/events/959027069169569/",
 		"Event_image":
 			"https://res.cloudinary.com/dytybjqwb/image/upload/v1742597411/innosphere_yerbap.jpg",
@@ -32,7 +52,7 @@ export const upevents = [
 	{
 		"Event Title": "IEEE Tejmaana 2.0 ",
 		"Event Date": "22 Mar 2025 8:30 PM",
-		"State": "Finished",
+		"State": "Done",
 		"Event_link":"https://www.facebook.com/events/647816040999518/",
 		"Event_image":
 			"https://res.cloudinary.com/dytybjqwb/image/upload/v1742599018/tejmaana_pk7shk.jpg",

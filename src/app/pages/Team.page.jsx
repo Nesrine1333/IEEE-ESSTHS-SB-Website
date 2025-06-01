@@ -7,8 +7,8 @@ import MultimediaDepartment from "../components/MultimediaDepartment";
 
 export default function TeamPage() {
 	return (
-		<div className="py-8 md:py-20">
-			<div className="xflex container mx-auto mb-12 flex-1 p-4 py-8 2xl:px-24 ">
+		<div className="py-10 md:py-20">
+			<div className="mb-12">
 				<ExCom />
 			</div>
 			<div className="mb-12">

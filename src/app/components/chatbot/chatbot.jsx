@@ -49,12 +49,35 @@ export const Chatbot = () => {
 		}
 	}, [isOpen]);
 
-	const handleSendMessage = () => {
-		if (!userInput.trim()) return;
-		setMessages((prev) => [...prev, { text: userInput, sender: "user" }]);
-		setUserInput("");
-		// Optional: handle freeform input logic here
-	};
+const handleSendMessage = () => {
+	if (!userInput.trim()) return;
+
+	const input = userInput.trim();
+	setMessages((prev) => [...prev, { text: input, sender: "user" }]);
+	setUserInput("");
+
+	// Normalize input to match botOptions keys
+	const matchKey = Object.keys(botOptions).find(
+		(key) => key.toLowerCase() === input.toLowerCase()
+	);
+
+	const botResponse = botOptions[matchKey];
+
+	if (botResponse) {
+		showBotMessage(botResponse.answer);
+		if (botResponse.followUp) {
+			setTimeout(() => {
+				showBotMessage(
+					botResponse.followUp.question,
+					true,
+					botResponse.followUp.options
+				);
+			}, 1000);
+		}
+	} else {
+		showBotMessage("Sorry, I don't have information on that yet.");
+	}
+};
 
 	const togglePopup = () => setIsOpen(!isOpen);
 

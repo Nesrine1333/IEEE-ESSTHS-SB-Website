@@ -1,9 +1,11 @@
-nav{
-    	
+.nav-background::before {
+	content: "";
+	position: absolute;
+	inset: 0;
 	background-image: url("https://res.cloudinary.com/dytybjqwb/image/upload/v1738272487/final_p1wiig.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: repeat;
-	opacity: 0.7; /* Adjust the opacity */
-	z-index: -1; /* Keeps it behind content */
+	opacity: 0.7; /* Control only the background's opacity */
+	z-index: -1;
 }

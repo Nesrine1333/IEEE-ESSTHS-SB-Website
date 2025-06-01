@@ -3,6 +3,15 @@ export const botOptions = {
 		question: "Hello! What do you want to know?",
 		options: ["What is IEEE", "IEEE ESSTHS", "Chapters and Affinity group"]
 	},
+	
+	"Hello": {
+		answer: "Hello! ."
+		,
+		followUp: {
+			question: "What do you want to know?",
+		options: ["What is IEEE", "IEEE ESSTHS", "Chapters and Affinity group"]
+		}
+	},
 	"What is IEEE": {
 		answer: "IEEE is the world’s largest technical professional organization dedicated to advancing technology for humanity."
 	},

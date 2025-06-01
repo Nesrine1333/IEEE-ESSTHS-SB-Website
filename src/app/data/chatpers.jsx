@@ -263,6 +263,214 @@ export const chapters = [
 				"Event URL": "https://events.vtools.ieee.org/m/276803",
 			},
 		],
+		latestActivities: [
+			{
+				"Event Title":
+				"Xtreme Training Session: Mastering Competitive Programming 101",
+				"Event Date": "17 Oct 2023 9:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/387753",
+			},
+			{
+				"Event Title":
+					"Fluttering Forward: Empowering Women In Engineering Through App Development",
+				"Event Date": "25 Apr 2023 8:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/362385",
+			},
+			{
+				"Event Title": "Participation  in IEEE Region 8 Industrial Bootcamp",
+				"Event Date": "15 Apr 2023 12:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/387837",
+			},
+			{
+				"Event Title": "Participation in Code to Cure 1.0",
+				"Event Date": "14 Apr 2023 12:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/387836",
+			},
+			{
+				"Event Title":
+					"Mastering the back-end: from the basics to advanced techniques",
+				"Event Date": "02 Apr 2023 9:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/362463",
+			},
+			{
+				"Event Title": "Game On : in collaboration with ENSIT SB",
+				"Event Date": "29 Nov 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334389",
+			},
+			{
+				"Event Title":
+					"Meeting with Farah Lajimi chair CS Chapter ENSIT : Collab CS Chapter ESSTHS X CS Chapter ENSIT",
+				"Event Date": "14 Nov 2022 4:08 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/333517",
+			},
+			{
+				"Event Title":
+					"Meeting with the administration of Lycée des non-voyants",
+				"Event Date": "26 Oct 2022 2:19 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/331539",
+			},
+			{
+				"Event Title":
+					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 5",
+				"Event Date": "20 Oct 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334960",
+			},
+			{
+				"Event Title": "Comp.CPP 5.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
+				"Event Date": "20 Oct 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337209",
+			},
+			{
+				"Event Title": "Code Runner 1.0",
+				"Event Date": "16 Oct 2022 1:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334969",
+			},
+			{
+				"Event Title":
+					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 4",
+				"Event Date": "14 Oct 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334958",
+			},
+			{
+				"Event Title": "Comp.CPP 4.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
+				"Event Date": "14 Oct 2022 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/337208",
+			},
+			{
+				"Event Title":
+					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 3",
+				"Event Date": "06 Oct 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334955",
+			},
+			{
+				"Event Title": "Comp.CPP 3.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
+				"Event Date": "06 Oct 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337206",
+			},
+			{
+				"Event Title":
+					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 2",
+				"Event Date": "29 Sep 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334954",
+			},
+			{
+				"Event Title": "Comp.CPP 2.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
+				"Event Date": "29 Sep 2022 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/337205",
+			},
+			{
+				"Event Title":
+					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 1",
+				"Event Date": "22 Sep 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334937",
+			},
+			{
+				"Event Title": "Comp.CPP 1.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
+				"Event Date": "22 Sep 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337203",
+			},
+			{
+				"Event Title": "Collab meeting : ESSTHS SB X ISIMA SB X SMU SB",
+				"Event Date": "19 Sep 2022 9:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/331550",
+			},
+			{
+				"Event Title": "Computer Society Team building on the 6th of August",
+				"Event Date": "06 Aug 2022 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/323399",
+			},
+			{
+				"Event Title": "React Training Sessions",
+				"Event Date": "11 Jul 2022 9:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/333527",
+			},
+			{
+				"Event Title": "COMP.CPP first session",
+				"Event Date": "04 Jul 2022 9:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/319388",
+			},
+			{
+				"Event Title":
+					"Ramadan Tech Talks 2nd Session : Introduction To Web Development",
+				"Event Date": "12 Apr 2022 10:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/312499",
+			},
+			{
+				"Event Title": "Code Of War",
+				"Event Date": "17 Mar 2022 9:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/317736",
+			},
+			{
+				"Event Title": "Intro to Graphic Design Workshop",
+				"Event Date": "01 Mar 2022 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/323096",
+			},
+			{
+				"Event Title": "Let's Learn Flutter Last Training session",
+				"Event Date": "28 Nov 2021 9:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/292147",
+			},
+			{
+				"Event Title": "Flutter training sessions",
+				"Event Date": "13 Nov 2021 8:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293667",
+			},
+			{
+				"Event Title": "Let's Learn Flutter",
+				"Event Date": "06 Nov 2021 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/292139",
+			},
+			{
+				"Event Title": "Flutter Booth",
+				"Event Date": "04 Nov 2021 9:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/292213",
+			},
+			{
+				"Event Title": "IEEEXTREME 15.0",
+				"Event Date": "22 Oct 2021 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/292254",
+			},
+			{
+				"Event Title": "Advanced IEEEXtreme Training Sessions",
+				"Event Date": "10 Oct 2021 9:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/291918",
+			},
+			{
+				"Event Title": "C Language Programming Training Session",
+				"Event Date": "20 Aug 2021 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/292185",
+			},
+			{
+				"Event Title": "Python workshop",
+				"Event Date": "23 Jul 2021 6:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279545",
+			},
+			{
+				"Event Title": "JavaScript Workshop",
+				"Event Date": "08 Jul 2021 5:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/277311",
+			},
+			{
+				"Event Title": "Python workshop",
+				"Event Date": "19 May 2021 8:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275282",
+			},
+			{
+				"Event Title": "Python Bootcamp, IOT & Digital Marketing",
+				"Event Date": "04 May 2021 9:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275280",
+			},
+			{
+				"Event Title": "Web Development",
+				"Event Date": "03 Apr 2021 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275283",
+			},
+			{
+				"Event Title": "Python Tutorial",
+				"Event Date": "28 Mar 2021 7:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/276803",
+			},
+		],
 	},
 	{
 		name: "Robotics & Automation Society (RAS)",
@@ -321,6 +529,179 @@ export const chapters = [
 			// },
 		],
 		events: [
+			{
+				"Event Title": "Robot's League 1.0",
+				"Event Date": "19 Nov 2023 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/384199",
+			},
+			{
+				"Event Title": "c++ workshop session for embedded systems",
+				"Event Date": "15 Jul 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/375978",
+			},
+			{
+				"Event Title": "SolidWorks speed modeling challenge 1.0",
+				"Event Date": "29 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/379082",
+			},
+			{
+				"Event Title": "SolidWorks training",
+				"Event Date": "19 Apr 2023 3:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/379104",
+			},
+			{
+				"Event Title": "ROBONERDS 3.0",
+				"Event Date": "17 Apr 2023 1:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337692",
+			},
+			{
+				"Event Title": "Participation in Robothack'23",
+				"Event Date": "16 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/359229",
+			},
+			{
+				"Event Title": "Raspberry Pi workshop",
+				"Event Date": "13 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337697",
+			},
+			{
+				"Event Title": "Solidworks Workshop",
+				"Event Date": "12 Mar 2023 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337699",
+			},
+			{
+				"Event Title": "PARTICIPATION IN FSM ROBOTS 2.0",
+				"Event Date": "05 Feb 2023 7:30 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/351250",
+			},
+			{
+				"Event Title": "Participation in ENISROBOT",
+				"Event Date": "27 Nov 2022 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/337180",
+			},
+			{
+				"Event Title": "ROBONERDS 2.0",
+				"Event Date": "19 Nov 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334922",
+			},
+			{
+				"Event Title": "Zarzis Scouts: Introduction to Arduino",
+				"Event Date": "19 Jul 2022 4:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/325849",
+			},
+			{
+				"Event Title": "Kid's paradise Hackathon",
+				"Event Date": "10 Jun 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/317235",
+			},
+			{
+				"Event Title": "MARIE CURIE COMPETITION",
+				"Event Date": "11 May 2022 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337168",
+			},
+			{
+				"Event Title": "ROBONERDS 1.0",
+				"Event Date": "07 May 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/313195",
+			},
+			{
+				"Event Title": "Participation in ENISO Smart Challenge",
+				"Event Date": "24 Apr 2022 9:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/321320",
+			},
+			{
+				"Event Title": "Participation in  IHEC Enactus",
+				"Event Date": "13 Apr 2022 3:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337194",
+			},
+			{
+				"Event Title": "Kid's Paradise Arduino Workshop",
+				"Event Date": "06 Apr 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/311474",
+			},
+			{
+				"Event Title": "Kid's Paradise Scratch Workshop",
+				"Event Date": "05 Apr 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/311475",
+			},
+			{
+				"Event Title": "MARIE CURIE ARDUINO WORKSHOPS",
+				"Event Date": "01 Mar 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337170",
+			},
+			{
+				"Event Title": "Kid's Paradise Arduino Workshop",
+				"Event Date": "03 Dec 2021 12:30 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/294394",
+			},
+			{
+				"Event Title": "KICAD Training session",
+				"Event Date": "13 Nov 2021 1:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293225",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "18 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293499",
+			},
+			{
+				"Event Title": "Iot Festival",
+				"Event Date": "13 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293495",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "06 Oct 2021 5:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/293475",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "01 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293358",
+			},
+			{
+				"Event Title": "From Dark Web To Crypto",
+				"Event Date": "17 Sep 2021 4:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293771",
+			},
+			{
+				"Event Title":
+					"Emerging technologies in robotics for factory automation",
+				"Event Date": "02 Sep 2021 10:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/292812",
+			},
+			{
+				"Event Title": "COLLABORATION WITH IEEE RAS NCU SB 2.0",
+				"Event Date": "18 Aug 2021 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279980",
+			},
+			{
+				"Event Title": "SolidWorks Workshop",
+				"Event Date": "06 Aug 2021 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279540",
+			},
+			{
+				"Event Title": "Collaboration with University of Mauritius IET",
+				"Event Date": "03 Aug 2021 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279986",
+			},
+			{
+				"Event Title": "Webinar on Basics of Robotics and AI event",
+				"Event Date": "15 Jul 2021 12:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/280197",
+			},
+			{
+				"Event Title": "Collaboration with IEEE RAS NCU SB - India",
+				"Event Date": "19 Jun 2021 12:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275355",
+			},
+			{
+				"Event Title": "Python Bootcamp, IOT & Digital Marketing",
+				"Event Date": "04 May 2021 9:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275280",
+			},
+		],
+			latestActivities: [
 			{
 				"Event Title": "Robot's League 1.0",
 				"Event Date": "19 Nov 2023 8:00 AM",
@@ -1186,6 +1567,179 @@ export const chapters = [
 				"Event URL": "https://events.vtools.ieee.org/m/277439",
 			},
 		],
+		latestActivities: [
+			{
+				"Event Title": "Robot's League 1.0",
+				"Event Date": "19 Nov 2023 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/384199",
+			},
+			{
+				"Event Title": "c++ workshop session for embedded systems",
+				"Event Date": "15 Jul 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/375978",
+			},
+			{
+				"Event Title": "SolidWorks speed modeling challenge 1.0",
+				"Event Date": "29 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/379082",
+			},
+			{
+				"Event Title": "SolidWorks training",
+				"Event Date": "19 Apr 2023 3:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/379104",
+			},
+			{
+				"Event Title": "ROBONERDS 3.0",
+				"Event Date": "17 Apr 2023 1:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337692",
+			},
+			{
+				"Event Title": "Participation in Robothack'23",
+				"Event Date": "16 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/359229",
+			},
+			{
+				"Event Title": "Raspberry Pi workshop",
+				"Event Date": "13 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337697",
+			},
+			{
+				"Event Title": "Solidworks Workshop",
+				"Event Date": "12 Mar 2023 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337699",
+			},
+			{
+				"Event Title": "PARTICIPATION IN FSM ROBOTS 2.0",
+				"Event Date": "05 Feb 2023 7:30 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/351250",
+			},
+			{
+				"Event Title": "Participation in ENISROBOT",
+				"Event Date": "27 Nov 2022 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/337180",
+			},
+			{
+				"Event Title": "ROBONERDS 2.0",
+				"Event Date": "19 Nov 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334922",
+			},
+			{
+				"Event Title": "Zarzis Scouts: Introduction to Arduino",
+				"Event Date": "19 Jul 2022 4:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/325849",
+			},
+			{
+				"Event Title": "Kid's paradise Hackathon",
+				"Event Date": "10 Jun 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/317235",
+			},
+			{
+				"Event Title": "MARIE CURIE COMPETITION",
+				"Event Date": "11 May 2022 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337168",
+			},
+			{
+				"Event Title": "ROBONERDS 1.0",
+				"Event Date": "07 May 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/313195",
+			},
+			{
+				"Event Title": "Participation in ENISO Smart Challenge",
+				"Event Date": "24 Apr 2022 9:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/321320",
+			},
+			{
+				"Event Title": "Participation in  IHEC Enactus",
+				"Event Date": "13 Apr 2022 3:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337194",
+			},
+			{
+				"Event Title": "Kid's Paradise Arduino Workshop",
+				"Event Date": "06 Apr 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/311474",
+			},
+			{
+				"Event Title": "Kid's Paradise Scratch Workshop",
+				"Event Date": "05 Apr 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/311475",
+			},
+			{
+				"Event Title": "MARIE CURIE ARDUINO WORKSHOPS",
+				"Event Date": "01 Mar 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337170",
+			},
+			{
+				"Event Title": "Kid's Paradise Arduino Workshop",
+				"Event Date": "03 Dec 2021 12:30 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/294394",
+			},
+			{
+				"Event Title": "KICAD Training session",
+				"Event Date": "13 Nov 2021 1:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293225",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "18 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293499",
+			},
+			{
+				"Event Title": "Iot Festival",
+				"Event Date": "13 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293495",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "06 Oct 2021 5:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/293475",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "01 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293358",
+			},
+			{
+				"Event Title": "From Dark Web To Crypto",
+				"Event Date": "17 Sep 2021 4:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293771",
+			},
+			{
+				"Event Title":
+					"Emerging technologies in robotics for factory automation",
+				"Event Date": "02 Sep 2021 10:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/292812",
+			},
+			{
+				"Event Title": "COLLABORATION WITH IEEE RAS NCU SB 2.0",
+				"Event Date": "18 Aug 2021 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279980",
+			},
+			{
+				"Event Title": "SolidWorks Workshop",
+				"Event Date": "06 Aug 2021 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279540",
+			},
+			{
+				"Event Title": "Collaboration with University of Mauritius IET",
+				"Event Date": "03 Aug 2021 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279986",
+			},
+			{
+				"Event Title": "Webinar on Basics of Robotics and AI event",
+				"Event Date": "15 Jul 2021 12:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/280197",
+			},
+			{
+				"Event Title": "Collaboration with IEEE RAS NCU SB - India",
+				"Event Date": "19 Jun 2021 12:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275355",
+			},
+			{
+				"Event Title": "Python Bootcamp, IOT & Digital Marketing",
+				"Event Date": "04 May 2021 9:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275280",
+			},
+		],
 	},
 	{
 		name: "Aerospace and Electronic Systems Society (AESS)",
@@ -1255,6 +1809,179 @@ export const chapters = [
 				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743409655/solidwork_dnovue.png",
 				
 		"desrip":"SolidWorks Bootcamp (IIP Joint Chapters x AESS SBC x RAS SBC): A collaborative initiative between IIP Joint Chapters, AESS SBC, and RAS SBC, the SolidWorks Bootcamp was established to provide hands-on training in 3D modeling, design, and simulation. Designed for both beginners and advanced learners, this bootcamp has played a key role in equipping participants with the technical skills needed to master SolidWorks through interactive sessions and practical exercises, fostering a community of learners passionate about innovation and design."
+			},
+		],
+		latestActivities: [
+			{
+				"Event Title": "Robot's League 1.0",
+				"Event Date": "19 Nov 2023 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/384199",
+			},
+			{
+				"Event Title": "c++ workshop session for embedded systems",
+				"Event Date": "15 Jul 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/375978",
+			},
+			{
+				"Event Title": "SolidWorks speed modeling challenge 1.0",
+				"Event Date": "29 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/379082",
+			},
+			{
+				"Event Title": "SolidWorks training",
+				"Event Date": "19 Apr 2023 3:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/379104",
+			},
+			{
+				"Event Title": "ROBONERDS 3.0",
+				"Event Date": "17 Apr 2023 1:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337692",
+			},
+			{
+				"Event Title": "Participation in Robothack'23",
+				"Event Date": "16 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/359229",
+			},
+			{
+				"Event Title": "Raspberry Pi workshop",
+				"Event Date": "13 Apr 2023 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337697",
+			},
+			{
+				"Event Title": "Solidworks Workshop",
+				"Event Date": "12 Mar 2023 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337699",
+			},
+			{
+				"Event Title": "PARTICIPATION IN FSM ROBOTS 2.0",
+				"Event Date": "05 Feb 2023 7:30 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/351250",
+			},
+			{
+				"Event Title": "Participation in ENISROBOT",
+				"Event Date": "27 Nov 2022 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/337180",
+			},
+			{
+				"Event Title": "ROBONERDS 2.0",
+				"Event Date": "19 Nov 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/334922",
+			},
+			{
+				"Event Title": "Zarzis Scouts: Introduction to Arduino",
+				"Event Date": "19 Jul 2022 4:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/325849",
+			},
+			{
+				"Event Title": "Kid's paradise Hackathon",
+				"Event Date": "10 Jun 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/317235",
+			},
+			{
+				"Event Title": "MARIE CURIE COMPETITION",
+				"Event Date": "11 May 2022 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337168",
+			},
+			{
+				"Event Title": "ROBONERDS 1.0",
+				"Event Date": "07 May 2022 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/313195",
+			},
+			{
+				"Event Title": "Participation in ENISO Smart Challenge",
+				"Event Date": "24 Apr 2022 9:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/321320",
+			},
+			{
+				"Event Title": "Participation in  IHEC Enactus",
+				"Event Date": "13 Apr 2022 3:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337194",
+			},
+			{
+				"Event Title": "Kid's Paradise Arduino Workshop",
+				"Event Date": "06 Apr 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/311474",
+			},
+			{
+				"Event Title": "Kid's Paradise Scratch Workshop",
+				"Event Date": "05 Apr 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/311475",
+			},
+			{
+				"Event Title": "MARIE CURIE ARDUINO WORKSHOPS",
+				"Event Date": "01 Mar 2022 1:15 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/337170",
+			},
+			{
+				"Event Title": "Kid's Paradise Arduino Workshop",
+				"Event Date": "03 Dec 2021 12:30 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/294394",
+			},
+			{
+				"Event Title": "KICAD Training session",
+				"Event Date": "13 Nov 2021 1:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293225",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "18 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293499",
+			},
+			{
+				"Event Title": "Iot Festival",
+				"Event Date": "13 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293495",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "06 Oct 2021 5:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/293475",
+			},
+			{
+				"Event Title": "IoT Festival",
+				"Event Date": "01 Oct 2021 5:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293358",
+			},
+			{
+				"Event Title": "From Dark Web To Crypto",
+				"Event Date": "17 Sep 2021 4:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/293771",
+			},
+			{
+				"Event Title":
+					"Emerging technologies in robotics for factory automation",
+				"Event Date": "02 Sep 2021 10:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/292812",
+			},
+			{
+				"Event Title": "COLLABORATION WITH IEEE RAS NCU SB 2.0",
+				"Event Date": "18 Aug 2021 1:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279980",
+			},
+			{
+				"Event Title": "SolidWorks Workshop",
+				"Event Date": "06 Aug 2021 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279540",
+			},
+			{
+				"Event Title": "Collaboration with University of Mauritius IET",
+				"Event Date": "03 Aug 2021 2:00 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/279986",
+			},
+			{
+				"Event Title": "Webinar on Basics of Robotics and AI event",
+				"Event Date": "15 Jul 2021 12:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/280197",
+			},
+			{
+				"Event Title": "Collaboration with IEEE RAS NCU SB - India",
+				"Event Date": "19 Jun 2021 12:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275355",
+			},
+			{
+				"Event Title": "Python Bootcamp, IOT & Digital Marketing",
+				"Event Date": "04 May 2021 9:30 PM",
+				"Event URL": "https://events.vtools.ieee.org/m/275280",
 			},
 		],
 	},

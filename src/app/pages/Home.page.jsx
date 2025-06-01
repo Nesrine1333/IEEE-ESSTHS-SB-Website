@@ -307,40 +307,41 @@ export default function HomePage() {
 				loading="lazy"
 			/>
 		</div> */}
-		<div className="col-span-12">
-			<h1 className="mb-4 text-4xl font-bold tracking-tight   lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-none">
-				About IEEE ESSTHS Student Branch.
-			</h1>
-			<h1 className="mb-4 text-lg font-medium   lg:mb-7 lg:text-start lg:text-xl lg:font-normal">
-				IEEE ESSTHS Student Branch, founded in 2020, is home to more than
-				280 members, making it the largest Student Branch in Sousse, and 7th
-				in Tunisia Section. It encompasses 5 Technical Chapters: AESS, CS,
-				IAS, PES, RAS, IES, and 2 Affinity Groups: SIGHT & WIE. We have had
-				the honor of receiving more than 12 worldwide IEEE Awards across all
-				fields through the dedication and commitment of each of our members.
-				<br />
-				Our mission is to empower Tunisian students with practical technical
-				skills and real-world experience through collaborative open-source
-				projects and humanitarian technology initiatives.
-			</h1>
-			<div>
-				<Link
-					// type="button"
-					to={"https://www.facebook.com/essthsieee/"}
-					target="_blank"
-					rel="noreferrer"
-					className="relative inline min-w-[120px] items-center justify-center rounded-full border-2 border-gray-600 px-6 py-2 text-center text-sm font-medium transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black  dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
-				>
-					{/* <div className="flex flex-wrap items-center justify-start gap-2"> */}
-					<span className="">Learn more about ESSTHS</span>
-					{/* </div> */}
-				</Link>
-			</div>
-		</div>
+		<div className="col-span-12 px-4 sm:px-6 md:px-8">
+	<h1 className="mb-4 text-2xl font-bold tracking-tight text-center sm:text-3xl lg:mb-7 lg:text-start lg:text-5xl lg:font-extrabold lg:leading-tight">
+		About IEEE ESSTHS Student Branch.
+	</h1>
+	<p className="mb-6 text-base font-medium text-center sm:text-lg md:text-start md:text-xl md:font-normal leading-relaxed">
+		IEEE ESSTHS Student Branch, founded in 2020, is home to more than
+		280 members, making it the largest Student Branch in Sousse, and 7th
+		in Tunisia Section. It encompasses 5 Technical Chapters: AESS, CS,
+		IAS, PES, RAS, IES, and 2 Affinity Groups: SIGHT & WIE. We have had
+		the honor of receiving more than 12 worldwide IEEE Awards across all
+		fields through the dedication and commitment of each of our members.
+		<br className="hidden sm:block" />
+		Our mission is to empower Tunisian students with practical technical
+		skills and real-world experience through collaborative open-source
+		projects and humanitarian technology initiatives.
+	</p>
+
+	<div className="flex justify-center md:justify-start">
+		<Link
+			to={"https://www.facebook.com/essthsieee/"}
+			target="_blank"
+			rel="noreferrer"
+			className="inline-block rounded-full border-2 border-gray-600 px-6 py-2 text-sm font-medium text-center transition hover:border-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:border-gray-400 dark:bg-black dark:hover:bg-white dark:hover:bg-opacity-20 dark:focus:ring-blue-800"
+		>
+			<span>Learn more about ESSTHS</span>
+		</Link>
+	</div>
+</div>
+
 
 	</section>
 </ScrollReveal>
-
+		<section>
+		<UpEvents chapter={upevents}/>
+	</section>
 <ScrollReveal>			<div className="col-span-12 mx-auto">
 			{/* <h1 className="mb-8 text-center text-4xl font-bold tracking-tight lg:mb-8 lg:text-center lg:text-6xl lg:font-extrabold lg:leading-none">
 				<span className="text-[#ffffff] dark:text-[#2d3d85]">IEEE</span>{" "}
@@ -362,9 +363,7 @@ export default function HomePage() {
 		
 		
 		</ScrollReveal>
-		<section>
-		<UpEvents chapter={upevents}/>
-	</section>
+
 <ScrollReveal >
 
 
@@ -684,27 +683,30 @@ function PoweredBy() {
 							loading="lazy"
 						/>
 					</a> */}
-					{/* <a
+				 <a
 						href="https://2btrading.tn/"
 						target="_blank"
 						rel="noreferrer"
-						className="overflow-hidden rounded-full p-8 shadow-md shadow-gray-200 transition hover:scale-105"
+						className=" border-x-2 border-blue-500 overflow-hidden rounded-full p-2 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
 					>
+					<div className="bg-[#f6f6f6] overflow-hidden rounded-full p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert">
 						<img
 							className="col-span-2 h-[115px] w-[115px] object-contain transition hover:scale-105 dark:shadow-gray-800 dark:invert md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"/assets/2b.jpg"}
-							alt="2betrading"
+							src={"/partners/bonepi.png"}
+							alt="bonepi"
 							// width={200}
 							// height={200}
 							loading="lazy"
 						/>
-					</a> */}
+						</div>
+					</a> 
 					<a
 						href="https://gomycode.com/"
 						target="_blank"
 						rel="noreferrer"
-						className="bg-white overflow-hidden rounded-full p-8 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+								className=" border-x-2 border-blue-500 overflow-hidden rounded-full p-2 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
 					>
+					<div className="bg-[#f6f6f6] overflow-hidden rounded-full p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert">
 						<img
 							className="col-span-2 h-[115px] w-[115px] object-contain transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"/assets/gmc.png"}
@@ -713,6 +715,7 @@ function PoweredBy() {
 							// height={200}
 							loading="lazy"
 						/>
+						</div>
 					</a>
 					{/* <a
 						href="https://www.pristiniaiuniversity.tn/"
@@ -733,8 +736,9 @@ function PoweredBy() {
 						href="http://www.essths.rnu.tn/public/"
 						target="_blank"
 						rel="noreferrer"
-						className="bg-white overflow-hidden rounded-full p-8 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+								className=" border-x-2 border-blue-500 overflow-hidden rounded-full p-2 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
 					>
+						<div className="bg-[#f6f6f6] overflow-hidden rounded-full p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert">
 						<img
 							className="col-span-2 h-[115px] w-[115px] object-contain transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
 							src={"/assets/essths.png"}
@@ -743,21 +747,27 @@ function PoweredBy() {
 							// height={200}
 							loading="lazy"
 						/>
+						
+						</div>
 					</a>
+					
 					<a
 						href="https://www.linkedin.com/company/rockets-space/"
 						target="_blank"
 						rel="noreferrer"
-						className="bg-white overflow-hidden rounded-full p-8 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
+						className=" border-x-2 border-blue-500 overflow-hidden rounded-full p-2 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert"
 					>
+					<div className="bg-[#f6f6f6] overflow-hidden rounded-full p-4 shadow-md shadow-gray-200 transition hover:scale-105 dark:invert">
 						<img
 							className="col-span-2 h-[115px] w-[115px] object-contain transition hover:scale-105 dark:shadow-gray-800 md:h-[200px] md:w-[200px] lg:col-span-1"
-							src={"/assets/rockets_space_logo.jpg"}
+							src={"/partners/rokects.jpg"}
 							alt="essths"
 							// width={200}
 							// height={200}
 							loading="lazy"
 						/>
+					</div>
+						
 					</a>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 import {  useNavigate, useParams } from "react-router-dom";
 
 import { motion } from "framer-motion";
-import { Chapter, Events } from "../components/Chapter";
+import { Chapter, Events,EventsPast } from "../components/Chapter";
 
 import "./Chatpter.css"
 import {chapters} from "../data/chatpers";
@@ -108,7 +108,13 @@ export default function ChapterPage() {
 			
 
 	</div>
-	<Events chapter={currentChapter} />
+<div  className="m-7 lg:px-20 sm:px-10 lg:py-20 sm:py-5">
+
+		 <Events chapter={currentChapter} /> 
+	<EventsPast chapter={currentChapter} />
+</div>
+
+
 			{/* <div className="mb-12">
 				<ExCom />
 			</div>

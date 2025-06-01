@@ -45,7 +45,7 @@ export function Chapter({ chapter }) {
 }
 
 export function Events({ chapter }) {
-	if (!chapter?.events || chapter.events.length === 0) {
+	if (!chapter?.latestActivities || chapter.latestActivities.length === 0) {
 	  console.log("No events found");
 	  return null;
 	}
@@ -54,7 +54,7 @@ export function Events({ chapter }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [expandedIndex, setExpandedIndex] = useState(null);
   
-	const sortedEvents = [...chapter.events]
+	const sortedEvents = [...chapter.latestActivities]
 	  .filter((event) => event["Event Date"])
 	  .map((event) => ({
 		...event,
@@ -90,7 +90,7 @@ export function Events({ chapter }) {
 		  transition={{ duration: 0.8 }}
 		  className="mb-6 text-4xl font-extrabold text-gray-800 dark:text-white"
 		>
-		  	Activities 
+		 Latest Activities 
 		</motion.div>
   
 		<div className="relative flex w-full items-center justify-center">
@@ -160,4 +160,64 @@ export function Events({ chapter }) {
   }
   
 
-  
+  export function EventsPast({ chapter }) {
+	if (chapter?.latestActivities?.length === 0) return null;
+
+	return (
+		<div className="relative flex flex-col items-center py-12">
+			<div className="mb-8 text-4xl font-bold">Events History</div>
+			<div className="not-prose w-full">
+				<div className="overflow-auto rounded-lg shadow-md">
+					<table className="w-full text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400">
+						<thead className="bg-white text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400">
+							<tr>
+								<th scope="col" className="px-6 py-3">
+									Title
+								</th>
+								<th scope="col" className="px-6 py-3">
+									Date
+								</th>
+								{/* <th scope="col" className="px-6 py-3">
+									Report
+								</th> */}
+							</tr>
+						</thead>
+						<tbody>
+							{chapter?.latestActivities?.map((event) => (
+								<tr className="border-b bg-white last:border-b-0 dark:border-gray-700 dark:bg-gray-800">
+									<td className="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
+										{event["Event Title"]}
+									</td>
+									<td className="whitespace-nowrap px-6 py-4">
+										{event["Event Date"]}
+									</td>
+									{/* <td className="whitespace-nowrap px-6 py-4 line-clamp-1">
+										<a
+											href={event["Event URL"]}
+											target="_blank"
+											rel="noreferrer"
+											className="underline"
+										>
+											{event["Event URL"]}
+										</a>
+									</td> */}
+								</tr>
+							))}
+
+							{/* <tr className="bg-white dark:bg-gray-800">
+							<th
+								scope="row"
+								className="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white"
+							>
+								Magic Mouse 2
+							</th>
+							<td className="px-6 py-4">Black</td>
+							<td className="px-6 py-4">Accessories</td>
+						</tr> */}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	);
+}

@@ -19,4 +19,28 @@ export const awardsData = [
 		date: "15 of Mars 2021",
 		urlimage: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743406344/Image3_fsvlih.png",
 	}
+	,
+	{
+		name: "The project TS'afe TSYP 9.0",
+		date: "15 of Mars 2021",
+		urlimage: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743406344/Image3_fsvlih.png",
+	}
+	,
+	{
+		name: "The project TS'afe TSYP 9.0",
+		date: "15 of Mars 2021",
+		urlimage: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743406344/Image3_fsvlih.png",
+	}
+	,
+	{
+		name: "The project TS'afe TSYP 9.0",
+		date: "15 of Mars 2021",
+		urlimage: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743406344/Image3_fsvlih.png",
+	}
+	,
+	{
+		name: "The project TS'afe TSYP 9.0",
+		date: "15 of Mars 2021",
+		urlimage: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743406344/Image3_fsvlih.png",
+	}
 ];

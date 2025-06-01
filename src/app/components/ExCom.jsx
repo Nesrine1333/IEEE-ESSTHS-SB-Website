@@ -3,11 +3,11 @@ import "./exCome.css";
 
 export default function ExCom() {
 	return (
-		<div className="xflex container mx-auto flex-1 p-4 py-[1rem] 2xl:px-24">
-			<div className="mb-8 text-4xl font-bold">
-				Meet the Executive Committee
-			</div>
-			<div className="grid grid-cols-12 gap-4  sm:grid-cols-12  md:grid-cols-8 md:gap-4  ">
+		<div className="xflex container mx-auto flex-1 p-4 py-8 2xl:px-24">
+			<div className="mb-8 text-2xl sm:text-3xl lg:text-4xl font-bold items-center">
+	Meet the Executive Committee
+</div>
+			<div className="grid grid-cols-12 gap-4  sm:grid-cols-12  md:grid-cols-10 md:gap-4  ">
 				{teamData
 					?.filter((s) => !!s?.active)
 					?.map((speaker) => (

@@ -22,14 +22,14 @@ import React, { useEffect, Suspense, useRef, useState } from "react";
 
 // ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale);
 
-
 function TeamBuildingMemories() {
   const [imageRotations, setImageRotations] = useState([]);
   const [blurImages, setBlurImages] = useState(false);
   const [showTitle, setShowTitle] = useState(false);
 
   useEffect(() => {
-    setImageRotations(images.map(() => Math.random() * 20 - 10));
+    // Reduced rotation range from 20 to 8 degrees
+    setImageRotations(images.map(() => Math.random() * 12 - 6));
 
     // Start blur after 3s
     const blurTimer = setTimeout(() => {
@@ -50,30 +50,36 @@ function TeamBuildingMemories() {
   return (
     <div className="relative flex h-screen flex-col items-center justify-center overflow-hidden">
       {/* Images block */}
-      <div className="absolute top-1 z-0 flex flex-wrap justify-center gap-4 px-2">
+      <div className="absolute top-1 z-0 flex flex-wrap justify-center -space-x-4 sm:-space-x-8 md:-space-x-12 px-2 max-w-4xl">
         {images.map((src, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, rotate: -15, scale: 0.9 }}
+            initial={{ opacity: 0, rotate: -15, scale: 0.9, y: -50 }}
             animate={{
               opacity: 1,
               rotate: imageRotations[index],
               scale: 1,
-              filter: blurImages ? "blur(10px)" : "blur(0px)",
+              y: Math.random() * 20 - 10, // Random vertical offset
+              filter: blurImages 
+                ? "blur(10px) brightness(1.5) contrast(0.8)" 
+                : "blur(0px)",
             }}
             transition={{
-              duration: 1.2,
-              delay: index * 0.1,
+              duration: 0.8,
+              delay: Math.random() * 0.3, // Random but smaller delay
               ease: "easeOut",
             }}
-            className="flex flex-col items-center bg-white rounded-md shadow-[0_5px_15px_rgba(0,0,0,0.5)] p-3 w-60"
+            className="flex flex-col items-center bg-white rounded-md shadow-[0_8px_25px_rgba(0,0,0,0.3)] p-2 sm:p-3 w-32 sm:w-48 md:w-60 transform hover:z-10 hover:scale-105 transition-transform"
+            style={{ 
+              zIndex: Math.floor(Math.random() * 10) + 1 // Random stacking order
+            }}
           >
             <img
               src={src}
               alt={`Memory ${index + 1}`}
-              className="w-full h-48 object-cover rounded-sm"
+              className="w-full h-24 sm:h-36 md:h-48 object-cover rounded-sm"
             />
-            <p className="mt-6 text-sm text-gray-600 italic text-center">
+            <p className="mt-2 sm:mt-4 md:mt-6 text-xs sm:text-sm text-gray-600 italic text-center">
               Memory #{index + 1}
             </p>
           </motion.div>
@@ -86,7 +92,7 @@ function TeamBuildingMemories() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className="z-10 text-center text-8xl font-extrabold text-blue-700"
+          className="z-10 text-center text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold text-blue-700 px-4"
         >
           <motion.span
             initial={{ clipPath: "inset(0% 100% 0% 0%)" }}
@@ -102,7 +108,6 @@ function TeamBuildingMemories() {
     </div>
   );
 }
-
   
 export default function AppLayout({ children }) {
 	const { pathname } = useLocation();

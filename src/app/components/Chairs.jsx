@@ -4,7 +4,7 @@ import {chairsData} from "../data/chairs"
 export default function Chairs() {
 	return (
 		<div className="xflex container mx-auto flex-1 p-4 py-8 2xl:px-24">
-			<div className="mb-8 text-4xl font-bold">Meet our Chairs</div>
+			<div className="mb-8 text-2xl sm:text-3xl lg:text-4xl font-bold items-center">Meet our Chairs</div>
 			<div className="grid grid-cols-12 gap-4  sm:grid-cols-12  md:grid-cols-10 md:gap-4 ">
 				{chairsData
 					?.filter((s) => !!s?.active)
