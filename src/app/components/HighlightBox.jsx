@@ -2,6 +2,8 @@ import { faDiscord, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
+
+
 export default function HighlightBox({ data }) {
 	return (
 		<div className="rounded-xl border-2 py-3 px-4 dark:border-gray-800">

@@ -12,6 +12,8 @@ import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { useParams } from "react-router-dom";
 
 import { useEffect } from "react";
+
+
 import './Navigation.css'
 
 export default function Navigation() {

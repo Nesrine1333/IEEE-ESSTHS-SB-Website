@@ -6,6 +6,7 @@ import { Link, Outlet, ScrollRestoration, useLocation } from "react-router-dom";
 import mosmos from "../../../assets/mosmos.png";
 
 
+
 export const Chatbot = () => {
 	const [messages, setMessages] = useState([]);
 	const [userInput, setUserInput] = useState("");
@@ -92,7 +93,7 @@ const handleSendMessage = () => {
 						<img
 							src={mosmos}
 							className={twMerge(
-								"fixed top-20 z-10 h-24 rotate-45 object-contain transition hover:scale-110 md:right-0 md:top-auto md:bottom-24 md:-rotate-45"
+								"fixed top-20 z-10 h-24 rotate-45 object-contain transition hover:scale-110 md:right-0 md:top-auto md:bottom-24 md:-rotate-45 cursor-pointer"
 							)}
 							alt="mosmos mascot"
 						/>

@@ -17,6 +17,8 @@ import skouz from "../../assets/OC pictures/skouz.png";
 import wijdene from "../../assets/OC pictures/wijdene.png";
 import hichem from "../../assets/OC pictures/hichem.jpg";
 
+
+
 export default function Team() {
 	return (
 		<div>

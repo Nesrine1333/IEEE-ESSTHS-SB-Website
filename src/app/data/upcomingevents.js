@@ -23,7 +23,7 @@ export const upevents = [
 	{
 		"Event Title": "Aess Talk",
 		"Event Date": "15 Apr 2025 ",
-		"State": "Finished",
+		"State": "Done",
 		"Event_link":"https://www.facebook.com/profile.php?id=61557575908522",
 		"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1742774733/482126767_122192740646252530_8840832326748474967_n_gcxbqt.jpg",
 		"Event_pdp": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743120305/aess_talk_q9xprg.png",
@@ -61,7 +61,7 @@ export const upevents = [
 	},{
 		"Event Title": "FrontEnd Development 101",
 		"Event Date": "11 March 2025",
-		"State": "Finished",
+		"State": "Done",
 		"Event_link":"https://www.facebook.com/photo/?fbid=938115931818367&set=pb.100068599066993.-2207520000",
 		"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743414485/Instagram_post_-_52_z7idsu.png",
 		"Event_pdp": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743414485/Instagram_post_-_52_z7idsu.png",

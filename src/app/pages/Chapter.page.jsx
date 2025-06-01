@@ -7,6 +7,8 @@ import "./Chatpter.css"
 import {chapters} from "../data/chatpers";
 import { useEffect } from "react";
 
+
+
 export default function ChapterPage() {
 
 	  
@@ -42,50 +44,48 @@ export default function ChapterPage() {
 	return (
 		<div className="py-40">
 		
-		  <motion.div
-      className=" flex items-center justify-center gap-3 text-white h-[35vh] sm:min-h-[30vh] s:h-[26vh] mt-5"
-      style={{
-        background: `linear-gradient(20deg, ${currentChapter.color},${currentChapter.variantcolor})`,
-        backgroundSize: "200% 200%",
-      }}
-      initial={{ opacity:1, scale: 1 }}
-      animate={{
-        opacity: 1,
-        scale: 1,
-        backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-      }}
-      transition={{
-        duration: 2, // Duration of one full cycle
-        ease: "linear",
-        repeat: Infinity, // Keeps looping
-      }}
+	<motion.div
+  className="flex items-center justify-center gap-3 text-white h-[25vh] sm:h-[30vh] md:h-[26vh] mt-5 px-4"
+  style={{
+    background: `linear-gradient(20deg, ${currentChapter.color}, ${currentChapter.variantcolor})`,
+    backgroundSize: "200% 200%",
+  }}
+  initial={{ opacity: 1, scale: 1 }}
+  animate={{
+    opacity: 1,
+    scale: 1,
+    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+  }}
+  transition={{
+    duration: 2,
+    ease: "linear",
+    repeat: Infinity,
+  }}
+>
+  <div className="w-auto flex justify-center">
+    <img
+      src={currentChapter.momos}
+      alt=""
+      className="w-[120px] sm:w-[120px] md:w-[150px] h-auto object-contain"
+    />
+  </div>
+
+  <div className="flex items-center justify-center w-1/2">
+  
+
+    <motion.h2
+      className="text-white text-2xl sm:text-2xl md:text-6xl font-bold text-center leading-tight"
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.3 }}
     >
-	<div	className=" image_container  ">
-	<img src={currentChapter.momos} className="image" alt=""/>
-	</div>
-	<div className="flex items-center justify-center w-1/2">
-	
-	  
-      <motion.div
-        initial={{ rotate: -45, opacity: 0 }}
-        animate={{ rotate: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        {/* <FontAwesomeIcon icon={faExternalLink} className="text-xl text-white" /> */}
-      </motion.div>
-      <motion.h2
-        className="text-center text-4xl font-bold text-white"
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-		
-      >
-	
-        {currentChapter.name}
-      </motion.h2>
-	  </div>
-    </motion.div>
-	<div  className="m-7 lg:px-20 sm:px-10 lg:py-20 sm:py-5">
+      {currentChapter.name}
+    </motion.h2>
+  </div>
+</motion.div>
+
+
+	<div  className="m-7 lg:px-20 sm:px-10 lg:py-t-20 sm:py-t-5">
 	<motion.div
         className="text-left lg:text-4xl md:text-xl sm:text-lg font-bold text-black py-10"
         initial={{ y: -10, opacity: 0 }}
@@ -104,13 +104,14 @@ export default function ChapterPage() {
 				/>
 			</div> */}
 			<Chapter chapter={currentChapter} />
-			<div className="h-10"></div>
+		
 			
 
 	</div>
+	 <Events chapter={currentChapter} /> 
 <div  className="m-7 lg:px-20 sm:px-10 lg:py-20 sm:py-5">
 
-		 <Events chapter={currentChapter} /> 
+		
 	<EventsPast chapter={currentChapter} />
 </div>
 

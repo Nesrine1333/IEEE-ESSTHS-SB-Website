@@ -6,6 +6,7 @@ import mayssa_ba from "../../assets/OC pictures/mayssa_ba.jpg";
 import soulaima_beltaif from "../../assets/OC pictures/soulaima_beltaif.jpg";
 import mehdi_selten from "../../assets/OC pictures/mehdi_selten.jpg";
 
+
 export default function HrDepartment() {
 	return (
 		<div>

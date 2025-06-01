@@ -7,6 +7,8 @@ import BrahamHimed from "../../assets/people/Braham Himed.jpg";
 import SrikanthPillai from "../../assets/people/Srikanth Pillai.jpg";
 import MikeHinchey from "../../assets/people/Mike Hinchey.webp";
 
+
+
 export default function Speakers() {
 	return (
 		<div>

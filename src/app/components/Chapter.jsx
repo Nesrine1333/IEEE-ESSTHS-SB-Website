@@ -45,123 +45,136 @@ export function Chapter({ chapter }) {
 }
 
 export function Events({ chapter }) {
-	if (!chapter?.latestActivities || chapter.latestActivities.length === 0) {
-	  console.log("No events found");
-	  return null;
-	}
-  
 	const scrollRef = useRef(null);
 	const [currentIndex, setCurrentIndex] = useState(0);
 	const [expandedIndex, setExpandedIndex] = useState(null);
-  
-	const sortedEvents = [...chapter.latestActivities]
-	  .filter((event) => event["Event Date"])
-	  .map((event) => ({
-		...event,
-		parsedDate: new Date(event["Event Date"]),
-	  }))
-	  .sort((a, b) => b.parsedDate - a.parsedDate);
-  
-	const scrollLeft = () => {
-	  if (scrollRef.current) {
-		scrollRef.current.scrollBy({
-		  left: -scrollRef.current.offsetWidth,
-		  behavior: "smooth",
-		});
-		setCurrentIndex((prev) => Math.max(prev - 1, 0));
-	  }
-	};
-  
-	const scrollRight = () => {
-	  if (scrollRef.current) {
-		scrollRef.current.scrollBy({
-		  left: scrollRef.current.offsetWidth,
-		  behavior: "smooth",
-		});
-		setCurrentIndex((prev) => Math.min(prev + 1, sortedEvents.length - 1));
-	  }
-	};
-  
-	return (
-	  <div className="relative flex flex-col items-center py-12">
-		<motion.div
-		  initial={{ opacity: 0, y: -50 }}
-		  animate={{ opacity: 1, y: 0 }}
-		  transition={{ duration: 0.8 }}
-		  className="mb-6 text-4xl font-extrabold text-gray-800 dark:text-white"
-		>
-		 Latest Activities 
-		</motion.div>
-  
-		<div className="relative flex w-full items-center justify-center">
 	
-  
-		  <button
-			onClick={scrollLeft}
-			className="absolute left-4 z-10 rounded-full bg-white p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-		  >
-			◀
-		  </button>
-  
-		  <div
-			ref={scrollRef}
-			className="relative flex w-full justify-center space-x-6 overflow-x-auto scroll-smooth p-4 custom-scrollbar"
-		  >
-			{sortedEvents.map((event, index) => (
-			  <motion.div
-				key={event["Event Title"]}
-				className="flex min-w-[30rem] cursor-pointer flex-col items-center justify-start gap-4 rounded-xl bg-white text-center shadow-lg transition-all ease-in-out hover:shadow-2xl dark:bg-gray-900 sm:h-64 sm:w-[250px] md:h-80 md:w-[500px]"
-				onClick={() => setExpandedIndex(index)}
-				whileHover={{ scale: 1.05 }}
-			  >
+	if (!chapter?.latestActivities || chapter.latestActivities.length === 0) {
+		console.log("No events found");
+		return null;
+	}
+
+	const sortedEvents = [...chapter.latestActivities]
+		.filter((event) => event["Event Date"])
+		.map((event) => ({
+			...event,
+			parsedDate: new Date(event["Event Date"]),
+		}))
+		.sort((a, b) => b.parsedDate - a.parsedDate);
+
+	const scrollLeft = () => {
+		if (scrollRef.current) {
+			const cardWidth = window.innerWidth < 640 ? 280 : window.innerWidth < 768 ? 290 : 340;
+			scrollRef.current.scrollBy({
+				left: -cardWidth,
+				behavior: "smooth",
+			});
+			setCurrentIndex((prev) => Math.max(prev - 1, 0));
+		}
+	};
+
+	const scrollRight = () => {
+		if (scrollRef.current) {
+			const cardWidth = window.innerWidth < 640 ? 280 : window.innerWidth < 768 ? 290 : 340;
+			scrollRef.current.scrollBy({
+				left: cardWidth,
+				behavior: "smooth",
+			});
+			setCurrentIndex((prev) => Math.min(prev + 1, sortedEvents.length - 1));
+		}
+	};
+
+	return (
+		<div className="relative flex flex-col items-center py-12">
+			<motion.div
+				initial={{ opacity: 0, y: -50 }}
+				animate={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.8 }}
+				className="mb-6 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-800 dark:text-white"
+			>
+				Latest Activities 
+			</motion.div>
+
+			<div className="relative flex w-full items-center justify-center">
+				<button
+					onClick={scrollLeft}
+					className="absolute left-2 sm:left-4 z-10 rounded-full bg-white p-2 sm:p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+				>
+					◀
+				</button>
+
 				<div
-				  className="background_events rounded"
-				  style={{ backgroundImage: `url(${event["Event_image"]})` }}
-				></div>
-				<div className="flex flex-col items-center justify-center gap-4 text-center">
-				  <div className="text-lg sm:text-sm md:text-sm font-semibold text-gray-900 dark:text-white">
-					<p className="break-words">{event["Event Title"]}</p>
-				  </div>
-				  <p className="mt-2 text-gray-600 dark:text-gray-400">
-					{event.parsedDate.toDateString()}
-				  </p>
-				  <a
-					href={event["Event URL"]}
-					target="_blank"
-					rel="noreferrer"
-					className="mt-4 text-blue-500 underline transition hover:text-blue-700"
-				  >
-					View Event
-				  </a>
+					ref={scrollRef}
+					className="flex w-full space-x-3 sm:space-x-4 md:space-x-6 overflow-x-auto scroll-smooth px-10 mx-10 py-2 custom-scrollbar"
+					style={{ scrollSnapType: 'x mandatory' }}
+				>
+					{sortedEvents.map((event, index) => (
+						<motion.div
+							key={event["Event Title"]}
+							className="group relative flex-shrink-0 w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 cursor-pointer rounded-xl overflow-hidden shadow-lg transition-all ease-in-out hover:shadow-2xl"
+							whileHover={{ scale: 1.02 }}
+							style={{
+								backgroundImage: `url(${event["Event_image"]})`,
+								backgroundSize: 'contain',
+								backgroundPosition: 'center',
+								backgroundRepeat: 'no-repeat',
+								scrollSnapAlign: 'start'
+							}}
+						>
+							{/* Dark overlay for better text readability */}
+							  <div className="absolute inset-0  bg-black/20 group-hover:bg-black/60 transition-all duration-300"></div>
+							
+							{/* Content overlay - hidden by default, shown on hover */}
+							<div className="absolute inset-0 backdrop-blur-lg flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 text-center p-4 sm:p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+								<div className="text-base sm:text-lg md:text-xl font-bold text-white drop-shadow-lg">
+									<p className="break-words leading-tight">{event["Event Title"]}</p>
+								</div>
+								
+								<p className="text-sm sm:text-base text-gray-200 drop-shadow-md">
+									{event.parsedDate.toDateString()}
+								</p>
+								
+								<a
+									href={event["Event URL"]}
+									target="_blank"
+									rel="noreferrer"
+									className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg text-sm sm:text-base font-medium transition-colors duration-200 shadow-lg cursor-pointer z-20"
+								>
+									<span>View Event</span>
+									<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+									</svg>
+								</a>
+							</div>
+							
+							{/* Subtle gradient overlay at bottom for depth */}
+							<div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/50 to-transparent"></div>
+						</motion.div>
+					))}
 				</div>
-			  </motion.div>
-			))}
-		
 
-		  </div>
-  
-		  <button
-			onClick={scrollRight}
-			className="absolute right-4 z-10 rounded-full bg-white p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
-		  >
-			▶
-		  </button>
-		  <div className="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-gray-100 to-transparent dark:from-gray-400 pointer-events-none backdrop-blur-sm"></div>
-		  <div className="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-gray-100 to-transparent dark:from-gray-400 pointer-events-none backdrop-blur-sm"></div>
+				<button
+					onClick={scrollRight}
+					className="absolute right-2 sm:right-4 z-10 rounded-full bg-white p-2 sm:p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+				>
+					▶
+				</button>
+				
+				<div className="absolute left-0 top-0 h-full w-8 sm:w-12 md:w-20 bg-gradient-to-r from-gray-100 to-transparent dark:from-gray-900 pointer-events-none z-10"></div>
+				<div className="absolute right-0 top-0 h-full w-8 sm:w-12 md:w-20 bg-gradient-to-l from-gray-100 to-transparent dark:from-gray-900 pointer-events-none z-10"></div>
+			</div>
+
+			<style jsx>{`
+				.custom-scrollbar::-webkit-scrollbar {
+					display: none;
+				}
+			`}</style>
 		</div>
-
-		<style jsx>{`
-		  .custom-scrollbar::-webkit-scrollbar {
-			display: none;
-		  }
-		`}</style>
-	  </div>
 	);
-  }
-  
+}
 
   export function EventsPast({ chapter }) {
-	if (chapter?.latestActivities?.length === 0) return null;
+	if (chapter?.events?.length === 0) return null;
 
 	return (
 		<div className="relative flex flex-col items-center py-12">
@@ -183,7 +196,7 @@ export function Events({ chapter }) {
 							</tr>
 						</thead>
 						<tbody>
-							{chapter?.latestActivities?.map((event) => (
+							{chapter?.events?.map((event) => (
 								<tr className="border-b bg-white last:border-b-0 dark:border-gray-700 dark:bg-gray-800">
 									<td className="whitespace-nowrap px-6 py-4 font-medium text-gray-900 dark:text-white">
 										{event["Event Title"]}

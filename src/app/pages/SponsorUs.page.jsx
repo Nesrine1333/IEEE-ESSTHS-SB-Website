@@ -4,6 +4,8 @@ import tsypCollabFilePreview from "../../assets/dossier-collab-tsyp.png";
 import { Link } from "react-router-dom";
 import { ContactForm } from "./Contact.page";
 
+
+
 export default function SponsorUsPage() {
 	return (
 		<div className="h-full">

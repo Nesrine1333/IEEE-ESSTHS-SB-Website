@@ -1,7 +1,7 @@
 export const images = [
 	"/assets/teambuilding/1.jpg",
 	"/assets/teambuilding/2.jpg",
-	"/assets/teambuilding/3.jpg",
+	"/assets/teambuilding/iip_award.jpg",
 	"/assets/teambuilding/5.jpg",
 	"/assets/teambuilding/4.jpg",
 	"/assets/teambuilding/6.jpg",
@@ -12,6 +12,8 @@ export const images = [
 	"/assets/teambuilding/10.jpg",
 
 	"/assets/teambuilding/11.jpg",
+"/assets/teambuilding/iip_pes.jpg",
+"/assets/teambuilding/wie_react.jpg",
 
 	"https://res.cloudinary.com/dytybjqwb/image/upload/v1743412818/470243402_1311431826938795_6548234760473154167_n_nlz9l7.jpg",
 	"https://res.cloudinary.com/dytybjqwb/image/upload/v1743412742/475062452_910686397933322_2209656078622075762_n_y6aeli.jpg",

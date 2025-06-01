@@ -31,18 +31,22 @@
 		"@tanstack/react-query-devtools": "^4.39.1",
 		"@types/three": "^0.148.0",
 		"@use-gesture/react": "^10.2.24",
-
 		"date-fns": "^2.29.3",
 		"framer-motion": "^9.1.7",
+		"imagemin-mozjpeg": "^10.0.0",
+		"imagemin-pngquant": "^10.0.0",
+		"imagemin-webp": "^8.0.0",
 		"postprocessing": "^6.37.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-helmet": "^6.1.0",
 		"react-icons": "^5.5.0",
 		"react-router-dom": "^6.30.0",
+		"sharp": "^0.34.2",
 		"tailwind-merge": "^1.9.1",
 		"three": "^0.148.0",
-		"usehooks-ts": "^2.9.1"
+		"usehooks-ts": "^2.9.1",
+		"vite-plugin-imagemin": "^0.6.1"
 	},
 	"devDependencies": {
 		"@tailwindcss/forms": "^0.5.3",

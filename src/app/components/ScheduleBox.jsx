@@ -2,6 +2,8 @@ import { differenceInMinutes, format, formatDistance } from "date-fns";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
+
+
 export default function ScheduleBox({ data, classNames }) {
 	return (
 		<div

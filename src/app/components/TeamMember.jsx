@@ -10,6 +10,8 @@ import { Link, useParams } from "react-router-dom";
 import StyledButton from "./StyledButton";
 import { teamData } from "./ExCom";
 
+
+
 export default function TeamMember() {
 	const { teamMemberSlug } = useParams();
 	const currentTeamMember = teamData.find((s) => s.name === teamMemberSlug);

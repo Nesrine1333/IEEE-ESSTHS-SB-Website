@@ -9,6 +9,8 @@ import { twMerge } from "tailwind-merge";
 import { images } from "../data/memories";
 import React, { useEffect, Suspense, useRef, useState } from "react";
 
+
+
 // import {
 // 	Chart as ChartJS,
 // 	LineElement,
@@ -48,9 +50,9 @@ function TeamBuildingMemories() {
   }, []);
 
   return (
-    <div className="relative flex h-screen flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden">
       {/* Images block */}
-      <div className="absolute top-1 z-0 flex flex-wrap justify-center -space-x-4 sm:-space-x-8 md:-space-x-12 px-2 max-w-4xl">
+      <div className="absolute top-0 z-0 flex flex-wrap justify-between ">
         {images.map((src, index) => (
           <motion.div
             key={index}
@@ -69,7 +71,7 @@ function TeamBuildingMemories() {
               delay: Math.random() * 0.3, // Random but smaller delay
               ease: "easeOut",
             }}
-            className="flex flex-col items-center bg-white rounded-md shadow-[0_8px_25px_rgba(0,0,0,0.3)] p-2 sm:p-3 w-32 sm:w-48 md:w-60 transform hover:z-10 hover:scale-105 transition-transform"
+            className="flex flex-col items-center bg-white rounded-md shadow-[0_8px_25px_rgba(0,0,0,0.3)] p-2 sm:p-3 w-full sm:w-48 md:w-60 transform hover:z-10 hover:scale-105 transition-transform"
             style={{ 
               zIndex: Math.floor(Math.random() * 10) + 1 // Random stacking order
             }}
