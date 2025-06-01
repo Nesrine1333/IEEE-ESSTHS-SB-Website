@@ -34,7 +34,7 @@ export function UpEvents({ chapter }) {
 	return (
 		<>
 			{selectedEvent && (
-	<div className="fixed inset-0 z-10 flex h-full w-full items-center justify-center bg-black bg-opacity-50 backdrop-blur-md">
+	<div className="fixed inset-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50 backdrop-blur-md  z-50">
 		<div
 			className="absolute inset-0"
 			onClick={() => setSelectedEvent(null)}
@@ -262,7 +262,7 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
         {/* Left Arrow - visible on mobile/tablet */}
         <button
           onClick={goToPrevious}
-          className="absolute left-2 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:hidden"
+          className="absolute left-2 top-1/2 z-20 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:hidden"
           aria-label="Previous event"
         >
           <svg
@@ -283,7 +283,7 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
         {/* Right Arrow - visible on mobile/tablet */}
         <button
           onClick={goToNext}
-          className="absolute right-2 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:hidden"
+          className="absolute right-2 top-1/2 z-20 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:hidden"
           aria-label="Next event"
         >
           <svg

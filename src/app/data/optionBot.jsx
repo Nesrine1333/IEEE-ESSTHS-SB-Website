@@ -30,7 +30,7 @@ export const botOptions = {
 		}
 	},
 	"Registration & Fees": {
-		answer: "The IEEE student registration fee is around 10–15 USD annually.",
+		answer: "The IEEE student registration fee is around 50DT annually.",
 		link:"https://docs.google.com/forms/d/e/1FAIpQLSfdPiGMgp3xIv9lMfxPXRRKZNO2xJzV1dmvvRLo3_YC3cLyJA/viewform"
 	},
 	"Facebook Page": {
