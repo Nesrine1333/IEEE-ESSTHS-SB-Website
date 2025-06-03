@@ -11,6 +11,7 @@ export const images = [
 	"/assets/teambuilding/10.jpg",
 
 	"/assets/teambuilding/11.jpg",
+		"/assets/teambuilding/12.jpg",
 "/assets/teambuilding/iip_pes.jpg",
 "/assets/teambuilding/wie_react.jpg",
 

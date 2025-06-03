@@ -441,7 +441,7 @@ export function Chapters({ title = "Our Chapters & Affinity Groups" }) {
 	const chapters = [
 	  { name: "RAS", link: "/chapters/ras", img: "/assets/ras.png", bg: "bg-[#740f0f]", bgcard: "#E8CDCC", background: "#740f0f" ,momos:'https://res.cloudinary.com/dytybjqwb/image/upload/v1741520286/momos_ras_feli4g.png'},
 	  { name: "CS", link: "/chapters/cs", img: "/assets/cs.png", bg: "bg-[#c65503]", bgcard: "#ECCDB4", background:"#E8CDCC" ,momos:'https://res.cloudinary.com/dytybjqwb/image/upload/v1741520289/momos_cs_usy4ml.png'},
-	  { name: "AESS", link: "/chapters/aess", img: "/assets/aess.png", bg: "bg-[#d9e2e5]", bgcard: "#d9e2e5", background: "#d9e2e5",momos:'https://res.cloudinary.com/dytybjqwb/image/upload/v1741520285/momos_aess_fx0cvm.png' },
+	  { name: "AESS", link: "/chapters/aess", img: "/assets/aess.png", bg: "bg-[#d9e2e5]", bgcard: "#d9e2e5", background: "#d9e2e5",momos:'/assets/momoset/momos_aess.png' },
 	  { name: "SIGHT", link: "/chapters/sight", img: "/assets/sight.png", bg: "bg-[#a14706]", bgcard: "#EFCDB2", background: "#c65503" ,momos:'https://res.cloudinary.com/dytybjqwb/image/upload/v1741520220/momos_sight_yobxu2.png'},
 	  { name: "WIE", link: "/chapters/wie", img: "/assets/wie.png", bg: "bg-[#4c1064]", bgcard: "#DBCCE1", background: "#4c1064",momos:'https://res.cloudinary.com/dytybjqwb/image/upload/v1741520256/momos_wied_chzjta.png' },
 	  { name: "IIP", link: "/chapters/iip", img: "/assets/iip.png", bg: "bg-[#fff]", bgcard :"#B3DFC6", background: "#0e5b30" ,momos:'https://res.cloudinary.com/dytybjqwb/image/upload/v1741520781/momos_iip_r10xwj.png'},

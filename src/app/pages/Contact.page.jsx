@@ -61,7 +61,7 @@ export function ContactForm({ title = "Contact us" }) {
 						Or call us
 					</h1>
 					<h1 className="mb-4 text-3xl font-semibold lg:text-4xl">
-						+216 56 479 019
+						+216 50 398 259
 					</h1>
 				</div>
 

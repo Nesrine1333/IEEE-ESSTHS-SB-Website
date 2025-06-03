@@ -110,31 +110,28 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
   const touchStartRef = useRef({ x: 0, y: 0 });
   const touchThreshold = 50; // Minimum swipe distance
 
-  const handleUserScroll = useCallback((e) => {
-    console.log('user scrolling');
-    e.preventDefault(); // Prevent default scroll behavior
-    
-    if (!userInteracted) setUserInteracted(true);
+const lastScrollTimeRef = useRef(0);
 
-    // Clear existing timeouts
-    if (userScrollTimeoutRef.current) clearTimeout(userScrollTimeoutRef.current);
+const handleUserScroll = useCallback((e) => {
+  const now = Date.now();
+  if (now - lastScrollTimeRef.current < 1000) return; // 1s debounce
+  lastScrollTimeRef.current = now;
 
-    const deltaY = e.deltaY;
-    
-    // Determine scroll direction and update currentIndex
-    if (deltaY > 0) {
-      // Scrolling down/right - go to next element
-      setCurrentIndex((prev) => (prev + 1) % loopedEvents.length);
-    } else if (deltaY < 0) {
-      // Scrolling up/left - go to previous element
-      setCurrentIndex((prev) => (prev - 1 + loopedEvents.length) % loopedEvents.length);
-    }
+  if (!userInteracted) setUserInteracted(true);
+  if (userScrollTimeoutRef.current) clearTimeout(userScrollTimeoutRef.current);
 
-    // Resume auto-scroll after 3 seconds of no interaction
-    userScrollTimeoutRef.current = setTimeout(() => {
-      setUserInteracted(false);
-    }, 3000);
-  }, [userInteracted, loopedEvents.length]);
+  const deltaY = e.deltaY;
+
+  if (deltaY > 0) {
+    setCurrentIndex((prev) => (prev + 1) % loopedEvents.length);
+  } else if (deltaY < 0) {
+    setCurrentIndex((prev) => (prev - 1 + loopedEvents.length) % loopedEvents.length);
+  }
+
+  userScrollTimeoutRef.current = setTimeout(() => {
+    setUserInteracted(false);
+  }, 1000);
+}, [userInteracted, loopedEvents.length]);
 
   // Touch event handlers
   const handleTouchStart = useCallback((e) => {
@@ -188,7 +185,7 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
     if (!container) return;
 
     // Mouse wheel events for desktop
-    container.addEventListener('wheel', handleUserScroll, { passive: false });
+    container.addEventListener('wheel', handleUserScroll, { passive: true });
 
     return () => {
       container.removeEventListener('wheel', handleUserScroll);
@@ -258,11 +255,12 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
         Latest Events
       </motion.div>
 
-      <div className="relative flex w-full overflow-hidden justify-center self-center">
+<div className="relative group flex w-full overflow-hidden justify-center self-center">
         {/* Left Arrow - visible on mobile/tablet */}
         <button
           onClick={goToPrevious}
-          className="absolute left-2 top-1/2 z-20 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:hidden"
+      className="absolute left-2 top-1/2 z-20 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:opacity-0 md:group-hover:opacity-100 duration-300"
+
           aria-label="Previous event"
         >
           <svg
@@ -283,7 +281,8 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
         {/* Right Arrow - visible on mobile/tablet */}
         <button
           onClick={goToNext}
-          className="absolute right-2 top-1/2 z-20 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:hidden"
+         className="absolute right-2 top-1/2 z-20 -translate-y-1/2 transform rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 dark:bg-gray-800/80 dark:hover:bg-gray-800 md:opacity-0 md:group-hover:opacity-100 duration-300"
+
           aria-label="Next event"
         >
           <svg
@@ -320,6 +319,14 @@ const SmoothScrollEvents = ({ loopedEvents, onExtend }) => {
               <motion.div
                 key={event["Event Title"] + idx}
                 onClick={() => onExtend(event)}
+         drag="x"
+  onDragEnd={(e, info) => {
+    if (info.offset.x < -50) {
+      goToNext();
+    } else if (info.offset.x > 50) {
+      goToPrevious();
+    }
+  }}
                 className="flex min-w-[20rem] cursor-pointer transform flex-col items-center justify-center rounded-lg bg-white p-2 text-center shadow-lg dark:bg-gray-800 sm:min-w-[20rem] md:w-[30%] md:min-w-[20rem] hover:opacity-100"
                 style={{
                   transform: `scale(${scale})`,

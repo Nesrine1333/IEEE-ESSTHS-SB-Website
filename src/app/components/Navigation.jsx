@@ -23,7 +23,7 @@ export default function Navigation() {
 	const { chapterSlug } = useParams();
 	useEffect(() => {
 		const faviconMap = {
-			"": `${SmallLogo}`,
+			"/": `/assets/logo/rsz_d2ycfxl.png`,
 			"cs": "/assets/cs.png",
 			"wie": "/assets/wie.png",
 			"sight": "/assets/sight.png",
@@ -51,20 +51,6 @@ export default function Navigation() {
 							className={`mr-3 h-6 sm:h-12 md:h-16`}
 							alt="IEEE ESSTHS"
 						/>
-						{/* <svg
-							className="mr-3 h-6 fill-gray-900 dark:fill-gray-100 sm:h-9"
-							aria-label="Vercel Logo"
-							// fill="white"
-							viewBox="0 0 75 65"
-							height={26}
-							data-testid="dashboard/logo"
-						>
-							<path d="M37.59.25l36.95 64H.64l36.95-64z" />
-						</svg> */}
-
-						{/* <span className="self-center whitespace-nowrap text-xl font-semibold">
-							TSYP 11
-						</span> */}
 					</Link>
 					<div className="flex items-center gap-2 ">
 						<div className="hidden w-auto items-center justify-between lg:flex">

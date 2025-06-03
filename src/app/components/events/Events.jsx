@@ -94,7 +94,6 @@ export function EventSb({ chapter }) {
             <motion.div
               key={`${event["Event Title"]}-${index}`}
               className="flex min-w-[16rem] sm:min-w-[20rem] md:min-w-[24rem] lg:min-w-[30rem] flex-col items-center justify-center rounded-lg p-4 sm:p-6 md:p-8 lg:p-10 text-center shadow-lg transition-all ease-in-out dark:bg-gray-800 cursor-pointer hover:shadow-xl"
-              onClick={() => setExpandedIndex(index % sortedEvents.length)}
               whileHover={{ scale: 1.02 }}
             >
               <div 
@@ -103,23 +102,7 @@ export function EventSb({ chapter }) {
               ></div>
               
               {/* Event details - shown on larger screens */}
-              <div className="mt-3 sm:mt-4 hidden sm:block">
-                <div className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 dark:text-white">
-                  <p className="line-clamp-2">{event["Event Title"]}</p>
-                </div>
-                <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-300">
-                  {event.parsedDate.toDateString()}
-                </p>
-                <a
-                  href={event["Event URL"]}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-2 inline-block text-xs sm:text-sm text-blue-500 underline transition hover:text-blue-700"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  View Event
-                </a>
-              </div>
+      
             </motion.div>
           ))}
         </div>

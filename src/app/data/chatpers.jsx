@@ -7,7 +7,7 @@ export const chapters = [
 			"Engaging computer engineers, scientists, academia, and industry professionals from all areas of computing, the IEEE Computer Society (CS) sets the standard for the education and engagement that fuels continued global technological advancement. Through conferences, publications, and programs, and by bringing together computer science and engineering leaders at every phase of their career for dialogue, debate, and collaboration, IEEE CS empowers, shapes, and guides the future of not only its members, but the greater industry, enabling new opportunities to better serve our world.",
 		color: "#e9c201",
 		variantcolor: "#c65503",
-		momos: "/assets/momoset/momos_cs.svg",
+		momos: "/assets/momoset/momos_cs.png",
 		slug: "cs",
 		excom_image: "/assets/chapters/cs_cover.jpg",
 		team: [
@@ -519,14 +519,14 @@ export const chapters = [
 					url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1742609240/treso_rtcfla.png",
 				},
 			},
-			// ,
-			// {
-			// 	name: "Chaima Ayed",
-			// 	title: "General Secretary",
-			// 	imageSmall: {
-			// 		url: "/assets/people/chaima_ayed_-_General_secretary_RAS_chapter.jpg",
-			// 	},
-			// },
+			 ,
+			 {
+			 	name: "Ranym Abysh",
+			 	title: "General Secretary",
+			 	imageSmall: {
+			 		url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1748990131/sg_ras_faxuyw.png",
+			 	},
+			 },
 		],
 		events: [
 			{
@@ -876,7 +876,7 @@ export const chapters = [
 		],
 	},
 	{
-		name: "IAS IES PES Joint Chapter (IIP)",
+		name: "IAS IES PES Joint Chapter",
 		descpt:
 			"The IEEE IAS-IES-PES Joint Chapter at ESSTHS serves as a dynamic platform for students passionate about industrial applications, power and energy systems, and industrial electronics. By integrating the expertise of the IEEE Industry Applications Society (IAS), IEEE Industrial Electronics Society (IES), and IEEE Power & Energy Society (PES), this chapter fosters technical excellence, professional growth, and industry engagement. Through a variety of initiatives—including workshops, seminars, technical projects, and industrial visits—members gain valuable hands-on experience and insights into real-world engineering challenges, effectively bridging the gap between academia and industry.",
 			descpt_pes:
@@ -1366,7 +1366,7 @@ export const chapters = [
 		],
 	},
 	{
-		name: "Women In Engineering (WIE)",
+		name: "Women In Engineering",
 		descpt:
 			"IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists and inspiring girls around the world to follow their academic interests in a career in engineering and science.",
 		color: "#ad0fa4",
@@ -1742,7 +1742,7 @@ export const chapters = [
 		],
 	},
 	{
-		name: "Aerospace and Electronic Systems Society (AESS)",
+		name: "Aerospace and Electronic Systems Society ",
 		descpt:
 			"The IEEE AESS Student Branch Chapter (SBC) at ESSTHS is dedicated to advancing knowledge and innovation in aerospace, electronic systems, and embedded technologies. Our mission is to provide a platform for students to explore cutting-edge fields such as avionics, satellite communications, radar systems, autonomous aerospace applications, and embedded electronic systems./n Through workshops, technical sessions, hands-on projects, and industry collaborations, we bridge the gap between theory and real-world applications. By connecting students with professionals, researchers, and IEEE AESS resources, we foster a dynamic community passionate about shaping the future of aerospace, electronics, and embedded systems.",
 		color: "#4a12aa",

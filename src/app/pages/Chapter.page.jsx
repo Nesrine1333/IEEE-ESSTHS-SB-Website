@@ -87,7 +87,7 @@ export default function ChapterPage() {
 
 	<div  className="m-7 lg:px-20 sm:px-10 lg:py-t-20 sm:py-t-5">
 	<motion.div
-        className="text-left lg:text-4xl md:text-xl sm:text-lg font-bold text-black py-10"
+        className="text-left lg:text-2xl md:text-xl sm:text-lg font-demi text-black py-10"
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }} 
         transition={{ duration: 0.5, delay: 0.3 }}
