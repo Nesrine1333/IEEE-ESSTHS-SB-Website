@@ -16,9 +16,9 @@ export const upevents = [
 		"State": "in Progress",
 		"Event_link":"https://www.facebook.com/profile.php?id=61557575908522",
 		"Event_image": "events/aess_drone_project.jpg",
-		"Event_pdp": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743120305/aess_talk_q9xprg.png",
+		"Event_pdp": "events/aess_drone_project_post.jpg",
 
-		"desrip":"AESS Ramadhan Talks 2.0 (2025): This year, AESS Ramadhan Talks 2.0 returns as an online event featuring a series of expert-led workshops and sessions. Focused on 'Technologies and Communications in Space,' the event will cover key topics such as 5G and space, cybersecurity, IoT, and their implementation in space. It provides a platform for participants to gain valuable insights from industry experts and explore the latest advancements shaping the future of space technology.",
+		"desrip":"Ready to dive into the fascinating world of drones? This is more than just a session — it's a full bootcamp made up of multiple online and offline sessions, designed to take you from curious beginner to confident drone explorer!Whether you're just getting started or want to level up your skills, this bootcamp is built for you.✨ What's included?✅ Hands-on learning (online & in-person)✅ Real-world drone applications✅ Guidance from experienced mentors✅ Certificate of participation at the end of the program✅ Exciting activities beyond drones to make your experience unforgettable!",
 	},
 	{
 		"Event Title": "Aess Talk",

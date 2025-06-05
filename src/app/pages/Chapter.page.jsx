@@ -45,7 +45,7 @@ export default function ChapterPage() {
 		<div className="py-40">
 		
 	<motion.div
-  className="flex items-center justify-center gap-3 text-white h-[25vh] sm:h-[30vh] md:h-[26vh] mt-5 px-4"
+  className="flex items-center justify-center gap-1 text-white h-[25vh] sm:h-[30vh] md:h-[26vh] mt-5 px-4"
   style={{
     background: `linear-gradient(20deg, ${currentChapter.color}, ${currentChapter.variantcolor})`,
     backgroundSize: "200% 200%",
@@ -62,19 +62,19 @@ export default function ChapterPage() {
     repeat: Infinity,
   }}
 >
-  <div className="w-auto flex justify-center">
+  <div className="w-[30%]  h-[150%] flex justify-center">
     <img
       src={currentChapter.momos}
       alt=""
-      className="w-[120px] sm:w-[120px] md:w-[150px] h-auto object-contain"
+      className="w-full sm:w-[120px] md:w-[200px] h-full object-contain z-10"
     />
   </div>
 
-  <div className="flex items-center justify-center w-1/2">
+  <div className="flex items-center justify-start w-[50%] ">
   
 
     <motion.h2
-      className="text-white text-2xl sm:text-2xl md:text-6xl font-bold text-center leading-tight"
+      className="text-white  text-2xl sm:text-xl lg:text-6xl md:text-5xl font-bold text-left leading-tight"
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.3 }}

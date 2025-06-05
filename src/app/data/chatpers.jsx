@@ -473,12 +473,12 @@ export const chapters = [
 		],
 	},
 	{
-		name: "Robotics & Automation Society (RAS)",
+		name: "Robotics & Automation Society ",
 		descpt:
 			"The IEEE Robotics and Automation Society (RAS) is a group within IEEE that focuses on robotics and automation. It supports research, organizes conferences, and helps professionals and students in the field.",
 		color: "#bc0010",
 		variantcolor: "#740f00",
-		momos: "/assets/momoset/momos_ras.svg",
+		momos: "/assets/momoset/momos_ras.png",
 		slug: "ras",
 		excom_image:"/assets/chapters/pes_cover.jpg",
 		team: [
@@ -703,176 +703,31 @@ export const chapters = [
 		],
 			latestActivities: [
 			{
-				"Event Title": "Robot's League 1.0",
+				"Event Title": "SolidWorks BootCamp",
 				"Event Date": "19 Nov 2023 8:00 AM",
 				"Event URL": "https://events.vtools.ieee.org/m/384199",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743464029/482448951_17899617087140920_4281904756229135368_n_dbgily.jpg",
 			},
-			{
-				"Event Title": "c++ workshop session for embedded systems",
-				"Event Date": "15 Jul 2023 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/375978",
+				{
+				"Event Title": "SolidWorks BootCamp",
+				"Event Date": "19 Nov 2023 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/384199",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743464028/482673620_17899617069140920_2966086212968560081_n_k3zkqh.jpg",
 			},
-			{
-				"Event Title": "SolidWorks speed modeling challenge 1.0",
-				"Event Date": "29 Apr 2023 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/379082",
+			
+				{
+				"Event Title": "SolidWorks BootCamp",
+				"Event Date": "19 Nov 2023 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/384199",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743464027/482535589_17899617084140920_823830245209295570_n_kzqxi8.jpg",
 			},
-			{
-				"Event Title": "SolidWorks training",
-				"Event Date": "19 Apr 2023 3:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/379104",
-			},
-			{
-				"Event Title": "ROBONERDS 3.0",
-				"Event Date": "17 Apr 2023 1:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337692",
-			},
-			{
-				"Event Title": "Participation in Robothack'23",
-				"Event Date": "16 Apr 2023 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/359229",
-			},
-			{
-				"Event Title": "Raspberry Pi workshop",
-				"Event Date": "13 Apr 2023 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337697",
-			},
-			{
-				"Event Title": "Solidworks Workshop",
-				"Event Date": "12 Mar 2023 1:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337699",
-			},
-			{
-				"Event Title": "PARTICIPATION IN FSM ROBOTS 2.0",
-				"Event Date": "05 Feb 2023 7:30 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/351250",
-			},
-			{
-				"Event Title": "Participation in ENISROBOT",
-				"Event Date": "27 Nov 2022 8:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/337180",
-			},
-			{
-				"Event Title": "ROBONERDS 2.0",
-				"Event Date": "19 Nov 2022 1:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/334922",
-			},
-			{
-				"Event Title": "Zarzis Scouts: Introduction to Arduino",
-				"Event Date": "19 Jul 2022 4:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/325849",
-			},
-			{
-				"Event Title": "Kid's paradise Hackathon",
-				"Event Date": "10 Jun 2022 1:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/317235",
-			},
-			{
-				"Event Title": "MARIE CURIE COMPETITION",
-				"Event Date": "11 May 2022 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337168",
-			},
-			{
-				"Event Title": "ROBONERDS 1.0",
-				"Event Date": "07 May 2022 1:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/313195",
-			},
-			{
-				"Event Title": "Participation in ENISO Smart Challenge",
-				"Event Date": "24 Apr 2022 9:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/321320",
-			},
-			{
-				"Event Title": "Participation in  IHEC Enactus",
-				"Event Date": "13 Apr 2022 3:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337194",
-			},
-			{
-				"Event Title": "Kid's Paradise Arduino Workshop",
-				"Event Date": "06 Apr 2022 1:15 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/311474",
-			},
-			{
-				"Event Title": "Kid's Paradise Scratch Workshop",
-				"Event Date": "05 Apr 2022 1:15 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/311475",
-			},
-			{
-				"Event Title": "MARIE CURIE ARDUINO WORKSHOPS",
-				"Event Date": "01 Mar 2022 1:15 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337170",
-			},
-			{
-				"Event Title": "Kid's Paradise Arduino Workshop",
-				"Event Date": "03 Dec 2021 12:30 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/294394",
-			},
-			{
-				"Event Title": "KICAD Training session",
-				"Event Date": "13 Nov 2021 1:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/293225",
-			},
-			{
-				"Event Title": "IoT Festival",
-				"Event Date": "18 Oct 2021 5:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/293499",
-			},
-			{
-				"Event Title": "Iot Festival",
-				"Event Date": "13 Oct 2021 5:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/293495",
-			},
-			{
-				"Event Title": "IoT Festival",
-				"Event Date": "06 Oct 2021 5:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/293475",
-			},
-			{
-				"Event Title": "IoT Festival",
-				"Event Date": "01 Oct 2021 5:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/293358",
-			},
-			{
-				"Event Title": "From Dark Web To Crypto",
-				"Event Date": "17 Sep 2021 4:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/293771",
-			},
-			{
-				"Event Title":
-					"Emerging technologies in robotics for factory automation",
-				"Event Date": "02 Sep 2021 10:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/292812",
-			},
-			{
-				"Event Title": "COLLABORATION WITH IEEE RAS NCU SB 2.0",
-				"Event Date": "18 Aug 2021 1:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/279980",
-			},
-			{
-				"Event Title": "SolidWorks Workshop",
-				"Event Date": "06 Aug 2021 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/279540",
-			},
-			{
-				"Event Title": "Collaboration with University of Mauritius IET",
-				"Event Date": "03 Aug 2021 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/279986",
-			},
-			{
-				"Event Title": "Webinar on Basics of Robotics and AI event",
-				"Event Date": "15 Jul 2021 12:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/280197",
-			},
-			{
-				"Event Title": "Collaboration with IEEE RAS NCU SB - India",
-				"Event Date": "19 Jun 2021 12:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/275355",
-			},
-			{
-				"Event Title": "Python Bootcamp, IOT & Digital Marketing",
-				"Event Date": "04 May 2021 9:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/275280",
-			},
+			
+				{
+				"Event Title": "SolidWorks BootCamp",
+				"Event Date": "19 Nov 2023 8:00 AM",
+				"Event URL": "https://events.vtools.ieee.org/m/384199",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743464025/482623823_17899617060140920_8908668474452551760_n_gxhiba.jpg",
+			}
 		],
 	},
 	{
@@ -887,7 +742,7 @@ export const chapters = [
 			"The IEEE IAS-IES-PES Joint Chapter at ESSTHS serves as a dynamic platform for students passionate about industrial applications, power and energy systems, and industrial electronics. By integrating the expertise of the IEEE Industry Applications Society (IAS), IEEE Industrial Electronics Society (IES), and IEEE Power & Energy Society (PES), this chapter fosters technical excellence, professional growth, and industry engagement. Through a variety of initiatives—including workshops, seminars, technical projects, and industrial visits—members gain valuable hands-on experience and insights into real-world engineering challenges, effectively bridging the gap between academia and industry.",
 		color: "#1a9e39",
 		variantcolor: "#0e5b30",
-		momos: "/assets/momoset/momos_iip.svg",
+		momos: "/assets/momoset/momos_iiip.png",
 		slug: "iip",
 		excom_image:"/assets/chapters/pes_cover.jpg",
 		team: [
@@ -1251,12 +1106,12 @@ export const chapters = [
 	// 	excom_image: ias_cover,
 	// },
 	{
-		name: "Special Interest Group on Humanitarian Technology (SIGHT)",
+		name: "Special Interest Group on Humanitarian Technology",
 		descpt:
 			"SIGHT (Special Interest Group on Humanitarian Technology) is an IEEE program dedicated to leveraging technology for social good. Our chapter at ESSTHS focuses on developing innovative solutions to address local and global humanitarian challenges, fostering collaboration among students, professionals, and communities. Through workshops, projects, and outreach initiatives, we aim to make a positive impact using engineering and technology.",
 		color: "#c65503",
 		variantcolor: "#CD163E",
-		momos: "/assets/momoset/momos_sight.svg",
+		momos: "/assets/momoset/momos_sight.png",
 		slug: "sight",
 		excom_image: "/assets/chapters/sight_cover.jpg",
 		team: [
@@ -1371,7 +1226,7 @@ export const chapters = [
 			"IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists and inspiring girls around the world to follow their academic interests in a career in engineering and science.",
 		color: "#ad0fa4",
 		variantcolor: "#4c1064",
-		momos: "/assets/momoset/momos_wie.svg",
+		momos: "/assets/momoset/momos_wie.png",
 		slug: "wie",
 		excom_image:"../../assets/chapters/wie_cover.jpg",
 		team: [
@@ -1747,7 +1602,7 @@ export const chapters = [
 			"The IEEE AESS Student Branch Chapter (SBC) at ESSTHS is dedicated to advancing knowledge and innovation in aerospace, electronic systems, and embedded technologies. Our mission is to provide a platform for students to explore cutting-edge fields such as avionics, satellite communications, radar systems, autonomous aerospace applications, and embedded electronic systems./n Through workshops, technical sessions, hands-on projects, and industry collaborations, we bridge the gap between theory and real-world applications. By connecting students with professionals, researchers, and IEEE AESS resources, we foster a dynamic community passionate about shaping the future of aerospace, electronics, and embedded systems.",
 		color: "#4a12aa",
 		variantcolor: "#4c1064",
-		momos: "/assets/momoset/momos_aess.svg",
+		momos: "/assets/momoset/momos_aess.png",
 		slug: "aess",
 		excom_image:
 			"https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/343659367_1699499560470613_5370874928584365932_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=d4nyr2B8VhIAX_4Yjz3&_nc_ht=scontent.ftun16-1.fna&oh=00_AfC8-pmvjaCbhmuRkiZWOteAYdvv1JgwcvdYCFWzjTOdGg&oe=64C2806C",

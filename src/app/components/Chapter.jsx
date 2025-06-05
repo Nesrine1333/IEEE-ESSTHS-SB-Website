@@ -98,7 +98,7 @@ export function Events({ chapter }) {
 			<div className="relative flex w-full items-center justify-center">
 				<button
 					onClick={scrollLeft}
-					className="absolute left-2 sm:left-4 z-10 rounded-full bg-white p-2 sm:p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+					className="absolute left-2 sm:left-4 z-1 rounded-full bg-white p-2 sm:p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 z-10"
 				>
 					◀
 				</button>
@@ -148,7 +148,7 @@ export function Events({ chapter }) {
 							</div>
 							
 							{/* Subtle gradient overlay at bottom for depth */}
-							<div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/50 to-transparent"></div>
+							<div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-black/50 to-transparent "></div>
 						</motion.div>
 					))}
 				</div>

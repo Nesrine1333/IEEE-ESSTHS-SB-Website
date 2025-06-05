@@ -65,7 +65,7 @@ export const chairsData = [
 			url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1741533707/chair_m4wjgh.png",
 		},
 		imageSmall: {
-			url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743403950/chair_m4wjgh.png",
+			url: "https://res.cloudinary.com/dytybjqwb/image/upload/c_thumb,g_face,w_800/v1743403950/chair_m4wjgh.png",
 		},
 	},	{
 		active: true,
@@ -87,7 +87,7 @@ export const chairsData = [
 			url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743400191/chair1_lzshyq.png",
 		},
 		imageSmall: {
-			url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1743400191/chair1_lzshyq.png",
+			url: "https://res.cloudinary.com/dytybjqwb/image/upload/w_900/v1743400191/chair1_lzshyq.png",
 		},
 	},
 	{
@@ -110,7 +110,7 @@ export const chairsData = [
 			url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1742607540/chair_aohb6r.png",
 		},
 		imageSmall: {
-			url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1742607540/chair_aohb6r.png",
+			url: "https://res.cloudinary.com/dytybjqwb/image/upload/c_thumb,g_face,w_600/v1742607540/chair_aohb6r.png",
 		},
 	},
 
