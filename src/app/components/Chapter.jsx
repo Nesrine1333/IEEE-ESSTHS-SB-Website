@@ -96,22 +96,22 @@ export function Events({ chapter }) {
 			</motion.div>
 
 			<div className="relative flex w-full items-center justify-center">
-			{currentIndex !==0 && <button
+			{currentIndex>0 && <button
 					onClick={scrollLeft}
-					className="absolute left-2 sm:left-4 z-1 rounded-full bg-white p-2 sm:p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 z-10"
+					className="absolute left-5 sm:left-10 md:left-8 z-1 rounded-full bg-white p-4 sm:p-2  shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 z-10"
 				>
 					◀
 				</button>}
 
 				<div
 					ref={scrollRef}
-					className="flex w-full space-x-3 sm:space-x-4 md:space-x-6 overflow-x-auto scroll-smooth px-10 mx-10 py-2 custom-scrollbar"
+					className="flex w-full space-x-3 sm:space-x-4 md:space-x-10 overflow-x-auto scroll-smooth px-10 mx-10 py-2 custom-scrollbar"
 					style={{ scrollSnapType: 'x mandatory' }}
 				>
 					{sortedEvents.map((event, index) => (
 						<motion.div
 							key={event["Event Title"]}
-							className="group relative flex-shrink-0 w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 cursor-pointer rounded-xl overflow-hidden shadow-lg transition-all ease-in-out hover:shadow-2xl"
+							className="group relative flex-shrink-0 w-72 sm:w-80 md:w-90 h-72 sm:h-80 md:h-90 cursor-pointer rounded-xl overflow-hidden shadow-lg transition-all ease-in-out hover:shadow-2xl"
 							whileHover={{ scale: 1.02 }}
 							style={{
 								backgroundImage: `url(${event["Event_image"]})`,
@@ -153,9 +153,9 @@ export function Events({ chapter }) {
 					))}
 				</div>
 
-			{currentIndex !== chapter.latestActivities.length-1 &&	<button
+			{currentIndex < chapter.latestActivities.length-1 &&	<button
 					onClick={scrollRight}
-					className="absolute right-2 sm:right-4 z-10 rounded-full bg-white p-2 sm:p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+				className="absolute right-5 sm:right-10 md:right-8 z-1 rounded-full bg-white p-4 sm:p-2  shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 z-10"
 				>
 					▶
 				</button>}

@@ -1162,6 +1162,39 @@ export const chapters = [
 				"Event URL": "https://events.vtools.ieee.org/m/319452",
 			},
 		],
+		latestActivities: [
+	
+			{
+				"Event Title": "FrontEnd Development 101",
+				"Event Date": "11 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/1CFWqnshW9/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750464387/482072002_938115941818366_2364003161927290515_n_op3059.jpg",
+
+			},
+				{
+				"Event Title": "SIGHT Info Session",
+				"Event Date": "02 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/1ZdZhyhmUx/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750732770/487925886_18008461358720621_3918963725017469300_n_sj7vst.jpg",
+
+			},
+				{
+				"Event Title": "SIGHT Day Congress 3.0 info session",
+				"Event Date": "05 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/1NKEDqvo5V/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750732783/495366415_686549610746757_7798954659372831803_n_p5yuox.jpg",
+
+			}
+			,
+				{
+				"Event Title": "Participating in the SIGHT Day Congress 3.0 ",
+				"Event Date": "19 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/19KPpAyegX/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750732772/494503239_18011967812720621_4163380350568286763_n_aof3v3.jpg",
+
+			}
+	
+		],
 	},
 	{
 		name: "Women In Engineering",
