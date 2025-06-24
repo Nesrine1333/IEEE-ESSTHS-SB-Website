@@ -1094,6 +1094,93 @@ export const chapters = [
 				"Event URL": "https://events.vtools.ieee.org/m/294310",
 			},
 		],
+			latestActivities: [
+			{
+				"Event Title": "Bright Sparks: Inspiring Young Minds",
+				"Event Date": "24 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/1HSskXMxXX/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750723893/494054649_17905844049140920_4608558245132057254_n_ytnqp5.jpg",
+
+			},
+				{
+				"Event Title": "Innosphere Virtual Summit:Session 3:Session 3: Introduction to Generative AI",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/1BfHyk4Wo3/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750725892/494355276_17905844079140920_5566469520564116005_n_hposdb.jpg",
+
+			},
+				{
+				"Event Title": "GREEN FUTURE: Cybersecurity and PII workshop",
+				"Event Date": "1 May 2025",
+				"Event URL": "https://www.facebook.com/share/p/1DZUXvwiHu/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750466027/492657364_122222678306195493_1497335320794574515_n_soexs5.jpg",
+
+			},
+				{
+				"Event Title": "GREEN FUTURE:  AI-Driven Future of Electric Vehicles and Smart Charging Networks",
+				"Event Date": "23 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/1CGW2dshF6/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750466027/490529771_701390922241893_4417717673767872011_n_u9gbyd.jpg",
+
+			},
+				{
+				"Event Title":"GREEN FUTURE: Edge Computing for Smarter Electrical Grids",
+				"Event Date":" 22 April 2025",
+				"Event URL": "https://www.facebook.com/profile.php?id=61557575908522",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750466026/492051199_122222245886195493_2491129940417854912_n_ht5x5t.jpg",
+
+			},	{
+				"Event Title": "Participation in the IEEE IAS 60th Anniversar",
+				"Event Date":" 6 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/1PUZdPF9wU/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750466018/488714303_17903798352140920_4736652605651921111_n_uv9vna.jpg",
+
+			},	{
+				"Event Title": "Innosphere Virtual Summit:Session 1: IoT in Action 🔗 MQTT & Node-RED",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/16YXfFZxLv/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750466135/481161847_122194726592088522_1988753131401336336_n_pgm3ow.jpg",
+
+			},	{
+				"Event Title": "Innosphere Virtual Summit:Session 2: IoT in Action 🔗 MQTT & Node-RED",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/16WTVgNx1A/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750466173/481477529_122211840140195493_4726493763519534196_n_nfduyn.jpg",
+
+			},	{
+				"Event Title": "Innosphere Virtual Summit:Session 3:Session 3: Introduction to Generative AI",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/1CLfEB96rh/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750466157/488923864_122218275470195493_6217701609809980461_n_qi7rqr.jpg",
+
+			},	{
+				"Event Title": "SolidWorks Bootcamp: First Steps!",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/1Acs4CAdLs/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750726035/483576319_17900240037140920_8510212412173393740_n_usuo6u.jpg",
+
+			},	{
+				"Event Title": " SolidWorks Bootcamp: Session 2",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/18zoWLPpDX/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750726093/483298204_17900368830140920_4461341886514410080_n_q8bkxf.jpg",
+
+			},	{
+				"Event Title": " SolidWorks Bootcamp: Session 3",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/1ErDS9swnb/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750726206/484001702_17900745882140920_4291233047870943649_n_vssl8c.jpg",
+
+			},	{
+				"Event Title": " SolidWorks Bootcamp: Session 4",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/1AX24UCsM6/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750726206/484001702_17900745882140920_4291233047870943649_n_vssl8c.jpg",
+
+			},
+			
+			
+		],
 	},
 	// {
 	// 	name: "Power & Energy Society",
@@ -1107,8 +1194,7 @@ export const chapters = [
 	// },
 	{
 		name: "Special Interest Group on Humanitarian Technology",
-		descpt:
-			"SIGHT (Special Interest Group on Humanitarian Technology) is an IEEE program dedicated to leveraging technology for social good. Our chapter at ESSTHS focuses on developing innovative solutions to address local and global humanitarian challenges, fostering collaboration among students, professionals, and communities. Through workshops, projects, and outreach initiatives, we aim to make a positive impact using engineering and technology.",
+		descpt:	"SIGHT (Special Interest Group on Humanitarian Technology) is an IEEE program dedicated to leveraging technology for social good. Our chapter at ESSTHS focuses on developing innovative solutions to address local and global humanitarian challenges, fostering collaboration among students, professionals, and communities. Through workshops, projects, and outreach initiatives, we aim to make a positive impact using engineering and technology.",
 		color: "#c65503",
 		variantcolor: "#CD163E",
 		momos: "/assets/momoset/momos_sight.png",

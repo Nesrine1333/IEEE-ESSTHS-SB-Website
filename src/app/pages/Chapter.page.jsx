@@ -109,11 +109,11 @@ export default function ChapterPage() {
 
 	</div>
 	 <Events chapter={currentChapter} /> 
-<div  className="m-7 lg:px-20 sm:px-10 lg:py-20 sm:py-5">
+{/* <div  className="m-7 lg:px-20 sm:px-10 lg:py-20 sm:py-5">
 
 		
 	<EventsPast chapter={currentChapter} />
-</div>
+</div> */}
 
 
 			{/* <div className="mb-12">
