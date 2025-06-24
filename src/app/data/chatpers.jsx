@@ -540,31 +540,46 @@ export const chapters = [
 			},
 		],
 			latestActivities: [
+		{
+				"Event Title": "SolidWorks Bootcamp: First Steps!",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/1LM85a2En9/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750731827/483758365_670281292022158_6651264046216373251_n_fatubh.jpg",
+
+			},	{
+				"Event Title": " SolidWorks Bootcamp: Session 2",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/16Syn1516D/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750731889/482318963_671001061950181_663013720901422241_n_witbux.jpg",
+
+			},	{
+				"Event Title": " SolidWorks Bootcamp: Session 3",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/19K6vfsE9T/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750731931/484170442_673115088405445_4070640330784265588_n_vhgk7u.jpg",
+
+			},
+			
 			{
-				"Event Title": "SolidWorks BootCamp",
-				"Event Date": "19 Nov 2023 8:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/384199",
-				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743464029/482448951_17899617087140920_4281904756229135368_n_dbgily.jpg",
-			},
-				{
-				"Event Title": "SolidWorks BootCamp",
-				"Event Date": "19 Nov 2023 8:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/384199",
-				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743464028/482673620_17899617069140920_2966086212968560081_n_k3zkqh.jpg",
-			},
-			
-				{
-				"Event Title": "SolidWorks BootCamp",
-				"Event Date": "19 Nov 2023 8:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/384199",
-				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743464027/482535589_17899617084140920_823830245209295570_n_kzqxi8.jpg",
+				"Event Title": "INNOSPEED3.0 -Info Session",
+				"Event Date":" 19 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/1EqUeSjFG8/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750732098/491834662_701064165610537_7737157159913555110_n_s0gej0.jpg",
+
+			},	{
+				"Event Title": " SolidWorks Bootcamp: Session 4",
+				"Event Date":" 04 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/1B81EMuT5B/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750731990/484805426_676217604761860_4148192813127096654_n_gvtqvv.jpg",
+
 			},
 			
-				{
-				"Event Title": "SolidWorks BootCamp",
-				"Event Date": "19 Nov 2023 8:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/384199",
-				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1743464025/482623823_17899617060140920_8908668474452551760_n_gxhiba.jpg",
+			{
+				"Event Title": "RoboGenesis-Info Session",
+				"Event Date":" 28 May 2025",
+				"Event URL": "https://www.facebook.com/share/p/16vsmDuVUi/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750732504/500731314_728341972882756_1794341578081974236_n_kqdgqw.jpg",
+
 			}
 		],
 	},
@@ -991,7 +1006,11 @@ export const chapters = [
 				"Event URL": "https://www.facebook.com/share/p/1CLfEB96rh/",
 				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750466157/488923864_122218275470195493_6217701609809980461_n_qi7rqr.jpg",
 
-			},	{
+			},
+			
+			
+			
+			{
 				"Event Title": "SolidWorks Bootcamp: First Steps!",
 				"Event Date":" 04 March 2025",
 				"Event URL": "https://www.facebook.com/share/p/1Acs4CAdLs/",
