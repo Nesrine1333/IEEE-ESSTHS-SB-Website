@@ -77,6 +77,7 @@ function TeamBuildingMemories() {
             }}
           >
             <img
+             fetchpriority="high"
                   src={src}
                   alt={`Team memory ${index + 1}`}
                   className="w-40 h-36 sm:w-60 sm:h-42 md:w-64 md:h-48 lg:w-72 lg:h-54 object-cover rounded-lg shadow-lg border-4 border-white transform hover:scale-105 transition-transform duration-300"
