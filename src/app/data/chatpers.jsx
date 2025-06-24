@@ -266,210 +266,48 @@ export const chapters = [
 		latestActivities: [
 			{
 				"Event Title":
-				"Xtreme Training Session: Mastering Competitive Programming 101",
-				"Event Date": "17 Oct 2023 9:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/387753",
+				" FST Hackathon 4.0 – Info Session",
+				"Event Date": "23 May 2025",
+				"Event URL": "https://www.facebook.com/share/p/1BFKwSo8oZ/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750728604/500629420_18051085139605570_7642481513657480143_n_baxgwk.jpg"
 			},
-			{
+{
 				"Event Title":
-					"Fluttering Forward: Empowering Women In Engineering Through App Development",
-				"Event Date": "25 Apr 2023 8:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/362385",
+				"Info Session: Code It Up 5.0",
+				"Event Date": "22 April 2025",
+				"Event URL": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750728558/491433584_18047595998605570_8173008013957726798_n_ml5kli.jpg",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750728558/491433584_18047595998605570_8173008013957726798_n_ml5kli.jpg",
+
 			},
-			{
-				"Event Title": "Participation  in IEEE Region 8 Industrial Bootcamp",
-				"Event Date": "15 Apr 2023 12:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/387837",
-			},
-			{
-				"Event Title": "Participation in Code to Cure 1.0",
-				"Event Date": "14 Apr 2023 12:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/387836",
-			},
-			{
+{
 				"Event Title":
-					"Mastering the back-end: from the basics to advanced techniques",
-				"Event Date": "02 Apr 2023 9:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/362463",
+				" 𝐈𝐧𝐝𝐚𝐛𝐚𝐗 𝐓𝐮𝐧𝐢𝐬𝐢𝐚 𝟐𝟎𝟐𝟓 – 𝐈𝐧𝐟𝐨 𝐒𝐞𝐬𝐬𝐢𝐨𝐧",
+				"Event Date": "28 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/1B12Cy5j3o/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750728590/494009111_18048204851605570_1866822155927822560_n_vapnuh.jpg",
+
 			},
-			{
-				"Event Title": "Game On : in collaboration with ENSIT SB",
-				"Event Date": "29 Nov 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/334389",
-			},
-			{
+{
 				"Event Title":
-					"Meeting with Farah Lajimi chair CS Chapter ENSIT : Collab CS Chapter ESSTHS X CS Chapter ENSIT",
-				"Event Date": "14 Nov 2022 4:08 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/333517",
-			},
-			{
+				"AINS 3.0 Info Session",
+				"Event Date": "25 April 2025",
+				"Event URL": "https://www.facebook.com/share/p/15XECwDKSB/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750728578/491435519_18047932121605570_2181384819001731175_n_r4fb9q.jpg",
+
+			}
+			,
+{
 				"Event Title":
-					"Meeting with the administration of Lycée des non-voyants",
-				"Event Date": "26 Oct 2022 2:19 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/331539",
-			},
-			{
-				"Event Title":
-					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 5",
-				"Event Date": "20 Oct 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/334960",
-			},
-			{
-				"Event Title": "Comp.CPP 5.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
-				"Event Date": "20 Oct 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337209",
-			},
-			{
-				"Event Title": "Code Runner 1.0",
-				"Event Date": "16 Oct 2022 1:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/334969",
-			},
-			{
-				"Event Title":
-					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 4",
-				"Event Date": "14 Oct 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/334958",
-			},
-			{
-				"Event Title": "Comp.CPP 4.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
-				"Event Date": "14 Oct 2022 8:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/337208",
-			},
-			{
-				"Event Title":
-					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 3",
-				"Event Date": "06 Oct 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/334955",
-			},
-			{
-				"Event Title": "Comp.CPP 3.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
-				"Event Date": "06 Oct 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337206",
-			},
-			{
-				"Event Title":
-					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 2",
-				"Event Date": "29 Sep 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/334954",
-			},
-			{
-				"Event Title": "Comp.CPP 2.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
-				"Event Date": "29 Sep 2022 8:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/337205",
-			},
-			{
-				"Event Title":
-					"COMP.CPP : Competitive programming training sessions in collaboration with SMU and ISIMA Part 1",
-				"Event Date": "22 Sep 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/334937",
-			},
-			{
-				"Event Title": "Comp.CPP 1.0 with IEEE ESSTHS CS & IEEE ISIMa CS",
-				"Event Date": "22 Sep 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/337203",
-			},
-			{
-				"Event Title": "Collab meeting : ESSTHS SB X ISIMA SB X SMU SB",
-				"Event Date": "19 Sep 2022 9:15 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/331550",
-			},
-			{
-				"Event Title": "Computer Society Team building on the 6th of August",
-				"Event Date": "06 Aug 2022 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/323399",
-			},
-			{
-				"Event Title": "React Training Sessions",
-				"Event Date": "11 Jul 2022 9:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/333527",
-			},
-			{
-				"Event Title": "COMP.CPP first session",
-				"Event Date": "04 Jul 2022 9:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/319388",
-			},
-			{
-				"Event Title":
-					"Ramadan Tech Talks 2nd Session : Introduction To Web Development",
-				"Event Date": "12 Apr 2022 10:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/312499",
-			},
-			{
-				"Event Title": "Code Of War",
-				"Event Date": "17 Mar 2022 9:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/317736",
-			},
-			{
-				"Event Title": "Intro to Graphic Design Workshop",
-				"Event Date": "01 Mar 2022 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/323096",
-			},
-			{
-				"Event Title": "Let's Learn Flutter Last Training session",
-				"Event Date": "28 Nov 2021 9:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/292147",
-			},
-			{
-				"Event Title": "Flutter training sessions",
-				"Event Date": "13 Nov 2021 8:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/293667",
-			},
-			{
-				"Event Title": "Let's Learn Flutter",
-				"Event Date": "06 Nov 2021 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/292139",
-			},
-			{
-				"Event Title": "Flutter Booth",
-				"Event Date": "04 Nov 2021 9:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/292213",
-			},
-			{
-				"Event Title": "IEEEXTREME 15.0",
-				"Event Date": "22 Oct 2021 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/292254",
-			},
-			{
-				"Event Title": "Advanced IEEEXtreme Training Sessions",
-				"Event Date": "10 Oct 2021 9:00 AM",
-				"Event URL": "https://events.vtools.ieee.org/m/291918",
-			},
-			{
-				"Event Title": "C Language Programming Training Session",
-				"Event Date": "20 Aug 2021 2:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/292185",
-			},
-			{
-				"Event Title": "Python workshop",
-				"Event Date": "23 Jul 2021 6:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/279545",
-			},
-			{
-				"Event Title": "JavaScript Workshop",
-				"Event Date": "08 Jul 2021 5:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/277311",
-			},
-			{
-				"Event Title": "Python workshop",
-				"Event Date": "19 May 2021 8:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/275282",
-			},
-			{
-				"Event Title": "Python Bootcamp, IOT & Digital Marketing",
-				"Event Date": "04 May 2021 9:30 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/275280",
-			},
-			{
-				"Event Title": "Web Development",
-				"Event Date": "03 Apr 2021 1:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/275283",
-			},
-			{
-				"Event Title": "Python Tutorial",
-				"Event Date": "28 Mar 2021 7:00 PM",
-				"Event URL": "https://events.vtools.ieee.org/m/276803",
-			},
+				"Hack to the Future - Info Session",
+				"Event Date": "29 March 2025",
+				"Event URL": "https://www.facebook.com/share/p/19XJM77a3s/",
+				"Event_image": "https://res.cloudinary.com/dytybjqwb/image/upload/v1750728368/486407625_18044990801605570_5424221902110695211_n_ugn2rt.jpg",
+			}
+	
+		
+		
+		
+	
 		],
 	},
 	{

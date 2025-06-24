@@ -96,12 +96,12 @@ export function Events({ chapter }) {
 			</motion.div>
 
 			<div className="relative flex w-full items-center justify-center">
-				<button
+			{currentIndex !==0 && <button
 					onClick={scrollLeft}
 					className="absolute left-2 sm:left-4 z-1 rounded-full bg-white p-2 sm:p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 z-10"
 				>
 					◀
-				</button>
+				</button>}
 
 				<div
 					ref={scrollRef}
@@ -153,12 +153,12 @@ export function Events({ chapter }) {
 					))}
 				</div>
 
-				<button
+			{currentIndex !== chapter.latestActivities.length-1 &&	<button
 					onClick={scrollRight}
 					className="absolute right-2 sm:right-4 z-10 rounded-full bg-white p-2 sm:p-3 shadow-lg transition hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
 				>
 					▶
-				</button>
+				</button>}
 				
 				<div className="absolute left-0 top-0 h-full w-8 sm:w-12 md:w-20 bg-gradient-to-r from-gray-100 to-transparent dark:from-gray-900 pointer-events-none z-10"></div>
 				<div className="absolute right-0 top-0 h-full w-8 sm:w-12 md:w-20 bg-gradient-to-l from-gray-100 to-transparent dark:from-gray-900 pointer-events-none z-10"></div>
