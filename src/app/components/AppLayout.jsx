@@ -118,7 +118,7 @@ export default function AppLayout({ children }) {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 		  setShowMemories(false);
-		}, 7000); // Show for 3 seconds
+		}, 500); // Show for 3 seconds
 	
 		return () => clearTimeout(timer); // Cleanup the timer on unmount
 	  }, []);

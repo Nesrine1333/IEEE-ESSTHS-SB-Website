@@ -98,7 +98,7 @@ export function EventSb({ chapter }) {
             >
               <div 
                 className="background_events h-32 w-full rounded bg-cover bg-center sm:h-40 md:h-48 lg:h-60" 
-                style={{ backgroundImage: `url(${event["Event_Image"]})` }} 
+                style={{ backgroundImage: `url(${event["Event_Image"]})` }} loading='lazy' 
               ></div>
               
               {/* Event details - shown on larger screens */}

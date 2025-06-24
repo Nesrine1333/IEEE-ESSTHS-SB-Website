@@ -59,6 +59,7 @@ export function UpEvents({ chapter }) {
 						src={selectedEvent["Event_pdp"]}
 						alt=""
 						className="w-full max-h-[250px] object-cover rounded-md sm:max-h-[300px]"
+            loading='lazy' 
 					/>
 				)}
 
