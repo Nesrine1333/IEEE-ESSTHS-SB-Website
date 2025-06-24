@@ -36,12 +36,12 @@ function TeamBuildingMemories() {
     // Start blur after 3s
     const blurTimer = setTimeout(() => {
       setBlurImages(true);
-    }, 3000);
+    }, 2000);
 
     // Show title after 4.5s
     const titleTimer = setTimeout(() => {
       setShowTitle(true);
-    }, 4500);
+    }, 2000);
 
     return () => {
       clearTimeout(blurTimer);
@@ -94,7 +94,7 @@ function TeamBuildingMemories() {
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 0.5 }}
           className="z-10 text-center text-6xl sm:text-6xl md:text-6xl lg:text-8xl font-extrabold text-blue-700 px-4"
         >
           <motion.span
@@ -118,7 +118,7 @@ export default function AppLayout({ children }) {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 		  setShowMemories(false);
-		}, 500); // Show for 3 seconds
+		}, 3500); // Show for 3 seconds
 	
 		return () => clearTimeout(timer); // Cleanup the timer on unmount
 	  }, []);
