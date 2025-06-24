@@ -28,9 +28,7 @@ import { ScheduleOverview } from "../components/schedule/ScheduleList";
 import Speakers from "../components/Speakers";
 import { useMediaQuery } from "usehooks-ts";
 import Chairs from "../components/Chairs";
-import MultimediaDepartment from "../components/MultimediaDepartment";
-import BusinessDepartment from "../components/BusinessDepartment";
-import HrDepartment from "../components/HrDepartment";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { EventSb } from "../components/events/Events";

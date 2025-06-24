@@ -1,5 +1,5 @@
 import SartexGroupLogo from "../../assets/companies/Sartex-group-big-1024x682.png";
-import IeeeEssthsSbLogo from "../../assets/companies/ieee-essths-sb-logo (Custom).png";
+import IeeeEssthsSbLogo from "../../assets/companies/ieee-essths-sb-logo_white.png";
 import ExpoListItem from "./ExpoListItem";
 
 export default function ExpoList() {

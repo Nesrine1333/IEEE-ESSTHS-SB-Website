@@ -1,4 +1,4 @@
-import ahmed_hmila from "../../assets/OC pictures/ahmed_hmila.jpg";
+
 import "./exCome.css";
 
 export default function ExCom() {
