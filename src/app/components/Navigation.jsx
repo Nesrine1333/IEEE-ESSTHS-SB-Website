@@ -24,12 +24,12 @@ export default function Navigation() {
 	useEffect(() => {
 		const faviconMap = {
 			"/": `/assets/logo/rsz_d2ycfxl.png`,
-			"cs": "/assets/cs.png",
-			"wie": "/assets/wie.png",
-			"sight": "/assets/sight.png",
-			"aess": "/assets/aess.png",
-			"iip": "/assets/iip.png",
-			"ras": "/assets/ras.png",
+			"cs": "/assets/logos/cs.png",
+			"wie": "/assets/logos/wie.png",
+			"sight": "/assets/logos/sight.png",
+			"aess": "/assets/logos/aess.png",
+			"iip": "/assets/logos/iip.png",
+			"ras": "/assets/logos/ras.png",
 		};
 		console.log("chapterSlug", chapterSlug);
 
@@ -42,7 +42,7 @@ export default function Navigation() {
 	}, [chapterSlug]);
 	return (
 		<div >
-			<nav className="nav-background border-color-[#ffffff] border-[#7f9ab3]-300 fixed z-10 w-full rounded border border-b-2  px-2 py-1 backdrop-blur-lg sm:px-8">
+			<nav className="nav-background border-color-[#ffffff] border-[#7f9ab3]-300 fixed z-20 w-full rounded border border-b-2  px-2 py-1 backdrop-blur-lg sm:px-8">
 				<div className="mx-auto flex flex-wrap items-center justify-between ">
 					<Link to="/" className="flex items-center">
 						<img

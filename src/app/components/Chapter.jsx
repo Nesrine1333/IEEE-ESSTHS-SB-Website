@@ -115,7 +115,7 @@ export function Events({ chapter }) {
 							whileHover={{ scale: 1.02 }}
 							style={{
 								backgroundImage: `url(${event["Event_image"]})`,
-								backgroundSize: 'contain',
+								backgroundSize: 'cover',
 								backgroundPosition: 'center',
 								backgroundRepeat: 'no-repeat',
 								scrollSnapAlign: 'start'

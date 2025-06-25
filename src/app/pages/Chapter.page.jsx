@@ -17,13 +17,13 @@ export default function ChapterPage() {
 	const currentChapter = chapters.find((s) => s.slug === chapterSlug);
 	useEffect(() => {
 		const faviconMap = {
-			"*": "/favicon-32x32.png",
-			"cs": "/csicons.png",
-			"wie": "/wie_icons.png",
-			"ras":"/icon_ras.png",
-			"sight": "/assets/sight.png",
-			"aess": "/aessold.png",
-			"iip": "/assets/iip.png",
+				"*": "/favicon-32x32.png",
+			"cs": "/assets/chaptericon/cs.png",
+			"wie": "/assets/chaptericon/wie_icons.png",
+			"aess": "/assets/chaptericon/aessold.png",
+			"ras": "/assets/chaptericon/icon_ras.png",
+			"iip": "/assets/chaptericon/iip.jpg",
+			"sight": "/assets/chaptericon/sight.png",
 		  };
 		console.log('chapterSlug',chapterSlug)
 		const currentChaptericon = chapters.find((s) => s.slug === chapterSlug);

@@ -43,13 +43,13 @@ export default function AwardsMapPage() {
 				const { chapterSlug } = useParams();
 				useEffect(() => {
 					const faviconMap = {
-						"/": "/favicon-32x32.png",
-				"/cs": "/csicons.png",
-				"/wie": "/wie_icons.png",
-				"/aess": "/aessold.png",
-				"/ras": "/icon_ras.png",
-				"/iip": "/icons/wie.png",
-				"/sight": "/icons/wie.png",
+							"/": "/favicon-32x32.png",
+			"/cs": "/assets/chaptericon/cs.png",
+			"/wie": "/assets/chaptericon/wie_icons.png",
+			"/aess": "/aessold.png",
+			"/ras": "/assets/chaptericon/icon_ras.png",
+			"/iip": "/assets/chaptericon/iip.png",
+			"/sight": "/assets/chaptericon/sight.png",
 					  };
 					console.log('chapterSlug',chapterSlug)
 			

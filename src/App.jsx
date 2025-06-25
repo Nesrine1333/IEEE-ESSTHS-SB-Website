@@ -114,12 +114,12 @@ const { chapterSlug } = useParams();
 	useEffect(() => {
 		const faviconMap = {
 			"/": "/favicon-32x32.png",
-			"cs": "/csicons.png",
-			"wie": "/wie_icons.png",
-			"sight": "/assets/cs.png",
-			"ras": "/icon_ras.png",
-			"aess": "/aessold.png",
-			"iip": "/assets/cs.png",
+			"cs": "/assets/chaptericon/cs.png",
+			"wie": "/assets/chaptericon/wie_icons.png",
+			"sight": "/assets/chaptericon/sight.png",
+			"ras": "/assets/chaptericon/icon_ras.png",
+			"aess": "/assets/chaptericon/aessold.png",
+			"iip": "/assets/chaptericon/iip.png",
 		  };
 		console.log('chapterSlug',chapterSlug)
 		const currentChaptericon = chapters.find((s) => s.slug === chapterSlug);
