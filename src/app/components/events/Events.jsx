@@ -93,12 +93,12 @@ export function EventSb({ chapter }) {
           {infiniteEvents.map((event, index) => (
             <motion.div
               key={`${event["Event Title"]}-${index}`}
-              className="flex min-w-[16rem] sm:min-w-[20rem] md:min-w-[24rem] lg:min-w-[30rem] flex-col items-center justify-center rounded-lg p-4 sm:p-6 md:p-8 lg:p-10 text-center shadow-lg transition-all ease-in-out dark:bg-gray-800 cursor-pointer hover:shadow-xl"
-              whileHover={{ scale: 1.02 }}
+              className="flex min-w-[16rem] sm:min-w-[20rem] md:min-w-[24rem] lg:min-w-[30rem] flex-col items-center justify-center rounded-lg p-4 sm:p-6 md:p-8 lg:p-10 text-center shadow-lg transition-all ease-in-out dark:bg-gray-800 hover:shadow-xl"
+              whileHover={{ scale: 1.02 }} loading='lazy' 
             >
               <div 
                 className="background_events h-32 w-full rounded bg-cover bg-center sm:h-40 md:h-48 lg:h-60" 
-                style={{ backgroundImage: `url(${event["Event_Image"]})` }}  loading='lazy'
+                style={{ backgroundImage: `url(${event["Event_Image"]})` }}  loading='lazy' 
               ></div>
               
               {/* Event details - shown on larger screens */}
