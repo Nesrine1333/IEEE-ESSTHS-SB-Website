@@ -120,6 +120,7 @@ export function Events({ chapter }) {
 								backgroundRepeat: 'no-repeat',
 								scrollSnapAlign: 'start'
 							}}
+							 loading='lazy'
 						>
 							{/* Dark overlay for better text readability */}
 							  <div className="absolute inset-0  bg-black/20 group-hover:bg-black/60 transition-all duration-300"></div>

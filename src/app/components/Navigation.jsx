@@ -46,7 +46,7 @@ export default function Navigation() {
 				<div className="mx-auto flex flex-wrap items-center justify-between ">
 					<Link to="/" className="flex items-center">
 						<img
-							loading="eager"
+							loading="lazy"
 							src={currentIcon}
 							className={`mr-3 h-6 sm:h-12 md:h-16`}
 							alt="IEEE ESSTHS"
