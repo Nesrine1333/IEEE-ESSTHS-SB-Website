@@ -190,7 +190,7 @@ export default function HomePage() {
 
 
 		<div className="w-[20%] ">
-			<img src="https://res.cloudinary.com/dytybjqwb/image/upload/v1738224012/logowhite_fgcekh.png" />
+			<img src="assets/logowhite_sb.png" />
 
 			</div>
 
@@ -466,7 +466,7 @@ export function Chapters({ title = "Our Chapters & Affinity Groups" }) {
 				  src={chapter.img}
 				  alt={chapter.name}
 				  className="h-36 w-64 rounded-xl object-contain transition-transform duration-300"
-				  loading='lazy' 
+				 	loading="lazy"
 				/>
 				<div
 				  className={`absolute inset-0 rounded-2xl transition-opacity duration-300 opacity-0 hover:opacity-80 `}

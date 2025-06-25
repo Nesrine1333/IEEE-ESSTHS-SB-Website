@@ -1086,13 +1086,13 @@ export const chapters = [
 					url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1742607539/vice_sor1ft.png",
 				},
 			},
-			// {
-			// 	name: "Hajer Abdelaoui",
-			// 	title: "General Secretary",
-			// 	imageSmall: {
-			// 		url: "/assets/people/hajer abdelaoui - secrétaire générale .jpg",
-			// 	},
-			// },
+			{
+				name: "Lamis Benfraj",
+				title: "General Secretary",
+				imageSmall: {
+					url: "https://res.cloudinary.com/dytybjqwb/image/upload/v1750809700/Mask_group_42_hoagmg.png",
+				},
+			},
 		],
 		events: [
 			{

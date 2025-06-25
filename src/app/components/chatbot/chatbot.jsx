@@ -174,7 +174,7 @@ const handleSendMessage = () => {
 						)}
 					</div>
 
-					<div className="input-container">
+					{/* <div className="input-container">
 						<input
 							type="text"
 							value={userInput}
@@ -182,7 +182,7 @@ const handleSendMessage = () => {
 							placeholder="Type a message"
 						/>
 						<button onClick={handleSendMessage}>Send</button>
-					</div>
+					</div> */}
 				</div>
 			)}
 		</div>

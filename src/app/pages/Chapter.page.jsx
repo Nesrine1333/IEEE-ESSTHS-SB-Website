@@ -64,6 +64,7 @@ export default function ChapterPage() {
 >
   <div className="w-[30%]  h-[150%] flex justify-center">
     <img
+    fetchpriority="high"
       src={currentChapter.momos}
       alt=""
       className="w-full sm:w-[120px] md:w-[200px] h-full object-contain z-10"
