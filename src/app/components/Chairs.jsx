@@ -19,12 +19,15 @@ export default function Chairs() {
 							className="col-span-6 rounded-xl border-2 p-2 transition hover:border-gray-600 focus:border-gray-900 dark:border-gray-800 dark:hover:border-gray-600 dark:focus:border-gray-500 md:col-span-3 lg:col-span-2    "
 						>
 						
- <div className="relative w-full aspect-[2/4] sm:aspect-[3/4] overflow-hidden rounded-lg ">
+ <div className="relative w-full overflow-hidden rounded-lg ">
   <img
     src={speaker.imageSmall.url}
     alt={speaker.name}
     loading="lazy"
-    className="absolute inset-0 w-full h-full object-contain"
+  	style={{
+									objectPosition: "center",
+								}}
+  	className="aspect-[12/16] w-full rounded-lg object-contain sm:aspect-[12/16]"
   />
 </div>
 

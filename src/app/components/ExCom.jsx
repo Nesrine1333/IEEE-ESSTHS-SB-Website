@@ -22,11 +22,11 @@ export default function ExCom() {
 						>
 							<img
 								style={{
-									objectPosition: "center top",
+									objectPosition: "center",
 								}}
 								src={speaker.imageSmall.url}
 								alt=""
-								className="aspect-[12/16] w-full rounded-lg object-cover sm:aspect-[12/16]"
+								className="aspect-[12/16] w-full rounded-lg  object-contain sm:aspect-[12/16]"
 								loading="lazy"
 							/>
 							<div className="text-center -mt-12">
